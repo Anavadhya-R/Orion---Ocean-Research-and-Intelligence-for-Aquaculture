@@ -2,8 +2,10 @@
 import { useState } from "react";
 import "./index.css";
 import "./species.css";
-import"./species-catalog.css";
+import "./species-catalog.css";
 import "./orion-page-overrides.css";
+import Auth from "./Auth";
+import "./auth.css";
 const navigation = [
   { id: "overview", icon: "⌂", label: "Overview" },
   { id: "species", icon: "◉", label: "Species Explorer" },
@@ -269,8 +271,36 @@ function FinancePlanner() {
 
 function App() {
   const [activePage, setActivePage] = useState("overview");
-  const [search, setSearch] = useState("");
+  const [user, setUser] = useState(() => {
+    try {
+      return JSON.parse(sessionStorage.getItem("orion_user")) || null;
+    } catch {
+      return null;
+    }
+  });
 
+  const handleLogout = async () => {
+    const token = sessionStorage.getItem("orion_token");
+
+    try {
+      await fetch(`${import.meta.env.VITE_API_BASE_URL || "/api"}/auth/logout`, {
+        method: "POST",
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
+      });
+    } catch (error) {
+      // Clear the local session even if the API is unavailable.
+      console.error("Logout request failed:", error);
+    } finally {
+      sessionStorage.removeItem("orion_token");
+      sessionStorage.removeItem("orion_user");
+      setUser(null);
+      setActivePage("overview");
+    }
+  };
+
+  if (!user) {
+    return <Auth onAuthenticated={setUser} />;
+  }
   const activeLabel =
     navigation.find((item) => item.id === activePage)?.label || "Overview";
 
@@ -317,12 +347,21 @@ function App() {
             <div className="wave-decoration">〜 〜 〜</div>
           </div>
           <div className="profile-row">
-            <div className="avatar">OR</div>
-            <div className="profile-copy">
-              <strong>Research workspace</strong>
-              <span>Member 5 · Frontend</span>
+            <div className="avatar">
+              {(user.name || user.email || "OR").slice(0, 2).toUpperCase()}
             </div>
-            <span className="profile-menu">•••</span>
+            <div className="profile-copy">
+              <strong>{user.name || user.email || "Orion user"}</strong>
+              <span>{user.role || "User"}</span>
+            </div>
+            <button
+              type="button"
+              className="profile-menu"
+              onClick={handleLogout}
+              aria-label="Log out"
+            >
+              Logout
+            </button>
           </div>
         </div>
       </aside>
