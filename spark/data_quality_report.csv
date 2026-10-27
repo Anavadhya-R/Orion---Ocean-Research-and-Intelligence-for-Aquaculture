@@ -1,0 +1,11 @@
+dataset,metric,value
+ocean_conditions,raw_rows,21996
+ocean_conditions,raw_null_cells,4260
+ocean_conditions,rows_after_dedupe,21996
+ocean_conditions,clean_rows,21996
+ocean_conditions,clean_null_cells,0
+site_month_analytical,rows,7279
+site_month_analytical,env_unmatched_rows,0
+aquaculture_sites,clean_rows,1000
+fish_production,clean_rows,7279
+marine_species,clean_rows,130
