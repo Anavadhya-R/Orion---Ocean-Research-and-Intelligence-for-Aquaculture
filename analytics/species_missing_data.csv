@@ -1,0 +1,131 @@
+species_id,common_name,oxygen_requirement_mg_l,missing_data
+SP001,Atlantic salmon,4.5,
+SP002,Rainbow trout,4.5,
+SP003,Coho salmon,4.5,
+SP004,Arctic char,5.0,
+SP005,Atlantic cod,4.5,
+SP006,Atlantic halibut,4.5,
+SP007,European seabass,4.5,
+SP008,Gilthead seabream,4.5,
+SP009,Meagre,4.5,
+SP010,Japanese amberjack,4.5,
+SP011,Yellowtail kingfish,4.5,
+SP012,Cobia,4.5,
+SP013,Barramundi,3.5,
+SP014,Nile tilapia,3.5,
+SP015,Mozambique tilapia,3.5,
+SP016,Milkfish,3.5,
+SP017,Flathead grey mullet,3.5,
+SP018,Orange-spotted grouper,5.0,
+SP019,Giant grouper,5.0,
+SP020,Common coral trout,5.0,
+SP021,Mangrove red snapper,3.5,
+SP022,Northern red snapper,5.0,
+SP023,Red seabream,4.5,
+SP024,Japanese flounder,4.5,
+SP025,Turbot,4.5,
+SP026,Common sole,4.5,
+SP027,Spotted seatrout,3.5,
+SP028,Red drum,3.5,
+SP029,Large yellow croaker,4.5,
+SP030,Tiger pufferfish,4.5,
+SP031,Snubnose pompano,4.5,
+SP032,Atlantic bluefin tuna,4.5,
+SP033,Pacific bluefin tuna,4.5,
+SP034,Yellowfin tuna,,species oxygen requirement not in dataset
+SP035,Bigeye tuna,,species oxygen requirement not in dataset
+SP036,Skipjack tuna,,species oxygen requirement not in dataset
+SP037,Atlantic mackerel,,species oxygen requirement not in dataset
+SP038,Atlantic herring,,species oxygen requirement not in dataset
+SP039,European pilchard,,species oxygen requirement not in dataset
+SP040,Peruvian anchoveta,,species oxygen requirement not in dataset
+SP041,Pacific sardine,,species oxygen requirement not in dataset
+SP042,Mahi-mahi,,species oxygen requirement not in dataset
+SP043,Swordfish,,species oxygen requirement not in dataset
+SP044,Blue marlin,,species oxygen requirement not in dataset
+SP045,Golden redfish,,species oxygen requirement not in dataset
+SP046,Orange roughy,,species oxygen requirement not in dataset
+SP047,Sablefish,,species oxygen requirement not in dataset
+SP048,Roughhead grenadier,,species oxygen requirement not in dataset
+SP049,Roundnose grenadier,,species oxygen requirement not in dataset
+SP050,Patagonian toothfish,,species oxygen requirement not in dataset
+SP051,Antarctic toothfish,,species oxygen requirement not in dataset
+SP052,Bald notothen,,species oxygen requirement not in dataset
+SP053,Polar cod,,species oxygen requirement not in dataset
+SP054,Common seahorse,,species oxygen requirement not in dataset
+SP055,Ocellaris clownfish,5.0,
+SP056,Humphead wrasse,,species oxygen requirement not in dataset
+SP057,Queen parrotfish,,species oxygen requirement not in dataset
+SP058,Great white shark,,species oxygen requirement not in dataset
+SP059,Whale shark,,species oxygen requirement not in dataset
+SP060,Giant manta ray,,species oxygen requirement not in dataset
+SP061,Ocean sunfish,,species oxygen requirement not in dataset
+SP062,Sea trout,3.5,
+SP063,European eel,3.5,
+SP064,Beluga sturgeon,3.5,
+SP065,Pacific white shrimp,3.5,
+SP066,Giant tiger prawn,3.5,
+SP067,Kuruma prawn,3.5,
+SP068,Fleshy prawn,3.5,
+SP069,Giant river prawn,3.5,
+SP070,Mud crab,3.5,
+SP071,Swimming crab,3.5,
+SP072,European lobster,3.5,
+SP073,American lobster,3.5,
+SP074,Ornate spiny lobster,4.0,
+SP075,Edible crab,,species oxygen requirement not in dataset
+SP076,Antarctic krill,,species oxygen requirement not in dataset
+SP077,Calanus copepod,,species oxygen requirement not in dataset
+SP078,Snow crab,,species oxygen requirement not in dataset
+SP079,Red king crab,,species oxygen requirement not in dataset
+SP080,Pacific oyster,3.0,
+SP081,Eastern oyster,3.0,
+SP082,European flat oyster,3.0,
+SP083,Blue mussel,3.0,
+SP084,Mediterranean mussel,3.0,
+SP085,Asian green mussel,3.0,
+SP086,Green-lipped mussel,3.0,
+SP087,King scallop,3.0,
+SP088,Yesso scallop,3.0,
+SP089,Peruvian calico scallop,3.0,
+SP090,Japanese abalone,3.0,
+SP091,Red abalone,3.0,
+SP092,Manila clam,3.0,
+SP093,Giant clam,3.0,
+SP094,Silver-lipped pearl oyster,3.0,
+SP095,Common octopus,,species oxygen requirement not in dataset
+SP096,Humboldt squid,,species oxygen requirement not in dataset
+SP097,Common bottlenose dolphin,,species oxygen requirement not in dataset
+SP098,Humpback whale,,species oxygen requirement not in dataset
+SP099,Blue whale,,species oxygen requirement not in dataset
+SP100,Killer whale,,species oxygen requirement not in dataset
+SP101,Harbour seal,,species oxygen requirement not in dataset
+SP102,West Indian manatee,,species oxygen requirement not in dataset
+SP103,Walrus,,species oxygen requirement not in dataset
+SP104,Dugong,,species oxygen requirement not in dataset
+SP105,Green sea turtle,,species oxygen requirement not in dataset
+SP106,Loggerhead sea turtle,,species oxygen requirement not in dataset
+SP107,Hawksbill sea turtle,,species oxygen requirement not in dataset
+SP108,Staghorn coral,,species oxygen requirement not in dataset
+SP109,Elkhorn coral,,species oxygen requirement not in dataset
+SP110,Lobe coral,,species oxygen requirement not in dataset
+SP111,Cauliflower coral,,species oxygen requirement not in dataset
+SP112,Mountainous star coral,,species oxygen requirement not in dataset
+SP113,Cold-water coral,,species oxygen requirement not in dataset
+SP114,Japanese kelp,2.0,
+SP115,Sugar kelp,2.0,
+SP116,Oarweed,2.0,
+SP117,Wakame,2.0,
+SP118,Nori,2.0,
+SP119,Elkhorn sea moss,2.0,
+SP120,Spinach seaweed,2.0,
+SP121,Red seaweed (Gracilaria),2.0,
+SP122,Giant kelp,2.0,
+SP123,Sea lettuce,2.0,
+SP124,Japanese sea cucumber,3.5,
+SP125,Sandfish sea cucumber,3.5,
+SP126,Purple sea urchin,3.5,
+SP127,Green sea urchin,,species oxygen requirement not in dataset
+SP128,Eelgrass,,species oxygen requirement not in dataset
+SP129,Neptune grass,,species oxygen requirement not in dataset
+SP130,Turtle grass,,species oxygen requirement not in dataset
