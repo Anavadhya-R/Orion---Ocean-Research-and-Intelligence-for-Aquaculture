@@ -1,0 +1,935 @@
+
+/* Orion Species Explorer — isolated styles */
+
+.species-explorer {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  color: #24445A;
+  font-family: "DM Sans", sans-serif;
+}
+
+.species-explorer *,
+.species-explorer *::before,
+.species-explorer *::after {
+  box-sizing: border-box;
+}
+
+.species-explorer .species-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 280px;
+  overflow: hidden;
+  padding: 32px;
+  border: 1px solid #D7E5E8;
+  border-radius: 19px;
+  background: linear-gradient(115deg, #E5F0EE 0%, #DCEAF0 55%, #EAE4F1 100%);
+}
+
+.species-explorer .species-hero-copy {
+  position: relative;
+  z-index: 2;
+  width: 62%;
+}
+
+.species-explorer .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #719D99;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.species-explorer .eyebrow-line {
+  display: inline-block;
+  width: 19px;
+  height: 2px;
+  background: #83B3AC;
+}
+
+.species-explorer .species-hero h2 {
+  margin: 16px 0 12px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(29px, 3vw, 39px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.species-explorer .species-hero p {
+  max-width: 390px;
+  margin: 0 0 20px;
+  color: #6F8790;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.species-explorer .primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 13px 17px;
+  border: 0;
+  border-radius: 10px;
+  background: #31576A;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.species-explorer .primary-button:hover {
+  background: #24445A;
+}
+
+.species-explorer .species-illustration {
+  position: absolute;
+  inset: 0 0 0 48%;
+  overflow: hidden;
+}
+
+.species-explorer .species-illustration-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.species-explorer .circle-a {
+  width: 185px;
+  height: 185px;
+  top: 38px;
+  right: 18%;
+  background: #B7D8D2;
+}
+
+.species-explorer .circle-b {
+  width: 115px;
+  height: 115px;
+  top: 120px;
+  right: 6%;
+  background: #D8D0E8;
+}
+
+.species-explorer .circle-c {
+  width: 78px;
+  height: 78px;
+  top: 45px;
+  right: 51%;
+  background: #F7F4EC;
+}
+
+.species-explorer .species-illustration-wave {
+  position: absolute;
+  top: 65px;
+  right: 31%;
+  color: #4D858A;
+  font-size: 82px;
+}
+
+.species-explorer .species-float-label {
+  position: absolute;
+  top: 26px;
+  right: 7%;
+  padding: 8px 11px;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 30px;
+  background: rgba(255,254,251,.85);
+  color: #587984;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.species-explorer .species-float-label.label-bottom {
+  top: auto;
+  right: 20%;
+  bottom: 25px;
+}
+
+.species-explorer .species-search-panel,
+.species-explorer .species-results-section {
+  width: 100%;
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid #E7E7DF;
+  border-radius: 16px;
+  background: #FFFEFB;
+}
+
+.species-explorer .species-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 19px;
+}
+
+.species-explorer .species-section-heading h2 {
+  margin: 0 0 7px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  letter-spacing: -.5px;
+}
+
+.species-explorer .species-section-heading p {
+  margin: 0;
+  color: #82949B;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.species-explorer .source-tag {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #F0F0E8;
+  color: #829391;
+  font-size: 9px;
+}
+
+.species-explorer .species-search-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 50px;
+  padding: 0 15px;
+  border: 1px solid #DCE6E5;
+  border-radius: 11px;
+  background: #FCFCF8;
+}
+
+.species-explorer .species-search-box:focus-within {
+  border-color: #94BDBA;
+  box-shadow: 0 0 0 3px rgba(148,189,186,.15);
+}
+
+.species-explorer .species-search-icon {
+  color: #729DA0;
+  font-size: 25px;
+}
+
+.species-explorer .species-search-box input {
+  display: block;
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  padding: 14px 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #24445A;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.species-explorer .species-search-box input::placeholder {
+  color: #9BA9AA;
+}
+
+.species-explorer .clear-search {
+  border: 0;
+  background: transparent;
+  color: #82979A;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.species-explorer .species-filter-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 23px 0 12px;
+  color: #526F7B;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.species-explorer .filter-note {
+  color: #9AA7A5;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.species-explorer .habitat-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.species-explorer .habitat-filter {
+  padding: 10px 14px;
+  border: 1px solid #E2E8E3;
+  border-radius: 30px;
+  background: #FBFAF6;
+  color: #829396;
+  font-family: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease;
+}
+
+.species-explorer .habitat-filter:hover {
+  border-color: #BCD7D2;
+}
+
+.species-explorer .habitat-filter.selected {
+  border-color: #C5DEDA;
+  background: #E5F0EC;
+  color: #477F7B;
+  font-weight: 700;
+}
+
+.species-explorer .species-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 22px;
+  border: 1px dashed #DDE5E1;
+  border-radius: 13px;
+  background: #FCFBF7;
+  text-align: center;
+}
+
+.species-explorer .species-empty-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 88px;
+}
+
+.species-explorer .species-empty-art > span {
+  position: relative;
+  z-index: 2;
+  color: #5E9495;
+  font-size: 54px;
+}
+
+.species-explorer .empty-art-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.species-explorer .art-circle-one {
+  top: 10px;
+  left: 5px;
+  width: 67px;
+  height: 67px;
+  background: #E1EFEB;
+}
+
+.species-explorer .art-circle-two {
+  right: 2px;
+  bottom: 5px;
+  width: 52px;
+  height: 52px;
+  background: #E9E2F1;
+}
+
+.species-explorer .species-empty-state h3 {
+  margin: 15px 0 9px;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+}
+
+.species-explorer .species-empty-state p {
+  max-width: 490px;
+  margin: 0 0 19px;
+  color: #89999C;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.species-explorer .secondary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 11px 15px;
+  border: 1px solid #D7E5E3;
+  border-radius: 9px;
+  background: #EAF2EF;
+  color: #507E7C;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.species-explorer .secondary-button:hover {
+  background: #DDECE7;
+}
+
+.species-explorer .species-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.species-explorer .species-info-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+  padding: 17px;
+  border: 1px solid #E7E8E0;
+  border-radius: 13px;
+  background: #FFFEFB;
+  text-decoration: none;
+  transition: transform .15s ease, border-color .15s ease;
+}
+
+.species-explorer .species-info-card:hover {
+  transform: translateY(-2px);
+  border-color: #C9DFDC;
+}
+
+.species-explorer .species-info-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  font-size: 20px;
+}
+
+.species-explorer .species-info-icon.mint {
+  background: #E1F0E9;
+  color: #639B89;
+}
+
+.species-explorer .species-info-icon.lavender {
+  background: #EEE7F5;
+  color: #9182B3;
+}
+
+.species-explorer .species-info-card div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.species-explorer .species-info-card h3 {
+  margin: 0 0 5px;
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+}
+
+.species-explorer .species-info-card p {
+  margin: 0;
+  color: #89999C;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.species-explorer .species-info-card > span {
+  color: #83A5A3;
+}
+
+@media (max-width: 720px) {
+  .species-explorer .species-hero {
+    min-height: 330px;
+    align-items: flex-start;
+    padding: 25px 20px;
+  }
+
+  .species-explorer .species-hero-copy {
+    width: 100%;
+  }
+
+  .species-explorer .species-hero h2 {
+    font-size: 30px;
+  }
+
+  .species-explorer .species-illustration {
+    inset: 135px 0 0 35%;
+    opacity: .5;
+  }
+
+  .species-explorer .species-search-panel,
+  .species-explorer .species-results-section {
+    padding: 17px;
+  }
+
+  .species-explorer .species-section-heading {
+    flex-direction: column;
+  }
+
+  .species-explorer .species-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Shared layouts for Orion's other workspaces */
+
+.workspace-page {
+  display: grid;
+  gap: 24px;
+  color: #24445A;
+  font-family: "DM Sans", sans-serif;
+}
+
+.workspace-page *,
+.workspace-page *::before,
+.workspace-page *::after {
+  box-sizing: border-box;
+}
+
+.workspace-banner {
+  min-height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 30px 34px;
+  border: 1px solid #D9E5E5;
+  border-radius: 18px;
+}
+
+.workspace-banner > div:first-child {
+  position: relative;
+  z-index: 1;
+  max-width: 540px;
+}
+
+.workspace-banner h2 {
+  margin: 14px 0 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(27px, 3vw, 36px);
+  line-height: 1.22;
+  letter-spacing: -1.3px;
+}
+
+.workspace-banner p {
+  max-width: 430px;
+  margin: 0;
+  color: #708790;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.habitat-banner {
+  background: linear-gradient(115deg, #E3EFED, #DFEAF2 65%, #EAE4F1);
+}
+
+.resource-banner {
+  background: linear-gradient(115deg, #F0EEE3, #E3EFEB 62%, #E3EAF1);
+}
+
+.finance-banner {
+  background: linear-gradient(115deg, #F3EDE2, #EAE6F1 58%, #DDEBE8);
+}
+
+.workspace-art {
+  display: grid;
+  place-items: center;
+  width: 155px;
+  height: 155px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 48% 52% 55% 45%;
+  font-size: 68px;
+}
+
+.habitat-art {
+  color: #4F888D;
+  background: #C7E0DB;
+}
+
+.resource-art {
+  color: #729A8C;
+  background: #D6E8DF;
+}
+
+.finance-art {
+  color: #9283AF;
+  background: #E2D9EE;
+}
+
+.workspace-link {
+  display: inline-flex;
+  margin-top: 18px;
+  padding: 11px 14px;
+  border-radius: 9px;
+  background: #31576A;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.workspace-section-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.workspace-section-title h2,
+.workspace-panel > h2,
+.finance-form-heading h2 {
+  margin: 0 0 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  letter-spacing: -.4px;
+}
+
+.workspace-section-title p,
+.finance-form-heading p,
+.panel-description {
+  margin: 0;
+  color: #87979B;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.data-status {
+  flex-shrink: 0;
+  padding: 7px 9px;
+  border-radius: 20px;
+  background: #EAF0E8;
+  color: #7D9683;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .6px;
+}
+
+.workspace-card-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.workspace-card-grid.three-columns {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.workspace-card-grid.two-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.workspace-card,
+.workspace-panel {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #E6E7DF;
+  border-radius: 15px;
+  background: #FFFEFB;
+}
+
+.workspace-card-icon {
+  display: grid;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  margin-bottom: 17px;
+  border-radius: 12px;
+  background: #E4EFEB;
+  color: #689B91;
+  font-size: 22px;
+}
+
+.card-label {
+  margin: 0 0 8px;
+  color: #7D9298;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.metric-placeholder {
+  margin: 5px 0 8px;
+  color: #A3B6B4;
+  font-family: "Manrope", sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.metric-placeholder small {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-description {
+  margin: 0 0 13px;
+  color: #89999C;
+  font-size: 10px;
+}
+
+.status-text {
+  color: #A08E78;
+  font-size: 9px;
+}
+
+.workspace-panel {
+  padding: 24px;
+}
+
+.workspace-empty {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 32px 18px 20px;
+  border: 1px dashed #DFE6E0;
+  border-radius: 12px;
+  background: #FCFBF7;
+}
+
+.empty-symbol {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: #E5F0EC;
+  color: #63999A;
+  font-size: 30px;
+}
+
+.workspace-empty h3 {
+  margin: 15px 0 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+}
+
+.workspace-empty p {
+  max-width: 470px;
+  margin: 0;
+  color: #87979B;
+  font-size: 10px;
+  line-height: 1.9;
+}
+
+.workspace-link-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #E5E7DF;
+  border-radius: 13px;
+  background: #FFFEFB;
+}
+
+.workspace-link-card > span:nth-child(2) {
+  display: grid;
+  flex: 1;
+  gap: 5px;
+  min-width: 0;
+}
+
+.workspace-link-card strong {
+  font-size: 11px;
+}
+
+.workspace-link-card small {
+  color: #87979B;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.workspace-link-card > b {
+  color: #83A5A3;
+}
+
+.resource-symbol {
+  display: grid;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  font-size: 21px;
+}
+
+.blue-symbol {
+  background: #E1EDF4;
+  color: #6898AD;
+}
+
+.mint-symbol {
+  background: #E1F0E9;
+  color: #639B89;
+}
+
+.inventory-table-wrap {
+  overflow-x: auto;
+  margin-top: 18px;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.inventory-table th {
+  padding: 13px 12px;
+  background: #F3F4EE;
+  color: #718890;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.inventory-table td {
+  padding: 23px 12px;
+  border-bottom: 1px solid #EEEFE8;
+  font-size: 10px;
+}
+
+.inventory-table .table-empty {
+  color: #8B9A9D;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.panel-note {
+  margin: 14px 0 0;
+  color: #99A3A2;
+  font-size: 9px;
+  line-height: 1.8;
+}
+
+.finance-form-panel {
+  display: grid;
+  gap: 22px;
+}
+
+.finance-form-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.currency-control,
+.finance-fields label {
+  display: grid;
+  gap: 8px;
+  color: #607D87;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.currency-control select,
+.finance-fields input {
+  width: 100%;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid #DCE5E2;
+  border-radius: 9px;
+  background: #FCFCF8;
+  color: #24445A;
+  font: inherit;
+}
+
+.finance-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.finance-fields input {
+  font-size: 12px;
+}
+
+.finance-fields input::placeholder {
+  color: #A1AEAC;
+}
+
+.finance-result {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #DFE8E2;
+  border-radius: 13px;
+  background: linear-gradient(110deg, #EAF2ED, #EEF0F5);
+}
+
+.finance-result > div + div {
+  padding-left: 18px;
+  border-left: 1px solid #D9E3DF;
+}
+
+.finance-result h3 {
+  margin: 9px 0 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(18px, 2.5vw, 25px);
+  overflow-wrap: anywhere;
+}
+
+.finance-result p {
+  margin: 0;
+  color: #839697;
+  font-size: 9px;
+  line-height: 1.7;
+}
+
+.finance-reset {
+  justify-self: start;
+  padding: 10px 14px;
+  border: 1px solid #D8E5E0;
+  border-radius: 9px;
+  background: #F5F6F0;
+  color: #607E7D;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.finance-reset:hover {
+  background: #EAF1EB;
+}
+
+@media (max-width: 720px) {
+  .workspace-banner {
+    min-height: 240px;
+    padding: 23px 20px;
+  }
+
+  .workspace-banner h2 {
+    font-size: 28px;
+  }
+
+  .workspace-art {
+    position: absolute;
+    right: -35px;
+    bottom: -35px;
+    width: 125px;
+    height: 125px;
+    opacity: .42;
+  }
+
+  .workspace-card-grid.three-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .workspace-card-grid.two-columns,
+  .finance-fields,
+  .finance-result {
+    grid-template-columns: 1fr;
+  }
+
+  .workspace-card {
+    padding: 17px;
+  }
+
+  .workspace-section-title,
+  .finance-form-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .workspace-panel {
+    padding: 17px;
+  }
+
+  .finance-result > div + div {
+    padding: 16px 0 0;
+    border-top: 1px solid #D9E3DF;
+    border-left: 0;
+  }
+}
