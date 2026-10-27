@@ -1,4 +1,4 @@
-
+﻿
 const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
@@ -137,6 +137,85 @@ app.post("/api/auth/logout", (_req, res) => {
   res.json({ message: "Logged out. Clear the client session." });
 });
 
+
+// Authenticate using the bearer token and load the current role from storage.
+async function authenticateToken(req, res, next) {
+  try {
+    const header = req.headers.authorization || "";
+    const match = header.match(/^Bearer\s+(.+)$/i);
+
+    if (!match) {
+      return res.status(401).json({ message: "Authentication required." });
+    }
+
+    let payload;
+    try {
+      payload = jwt.verify(match[1], JWT_SECRET);
+    } catch {
+      return res.status(401).json({ message: "Invalid or expired token." });
+    }
+
+    const users = await readUsers();
+    const user = users.find((item) => item.id === payload.sub);
+
+    if (!user) {
+      return res.status(401).json({ message: "Account not found." });
+    }
+
+    req.user = user;
+    next();
+  } catch (error) {
+    console.error("Authentication error:", error);
+    return res.status(500).json({ message: "Authentication failed." });
+  }
+}
+
+function allowRoles(...roles) {
+  return (req, res, next) => {
+    if (!req.user || !roles.includes(req.user.role)) {
+      return res.status(403).json({ message: "You do not have permission." });
+    }
+    next();
+  };
+}
+
+app.get("/api/auth/me", authenticateToken, (req, res) => {
+  res.json({ user: publicUser(req.user) });
+});
+
+app.get(
+  "/api/admin/users",
+  authenticateToken,
+  allowRoles("Admin"),
+  async (_req, res) => {
+    try {
+      const users = await readUsers();
+      res.json({ users: users.map(publicUser) });
+    } catch (error) {
+      console.error("Admin users error:", error);
+      res.status(500).json({ message: "Could not load users." });
+    }
+  }
+);
+
+app.get(
+  "/api/farmer/area",
+  authenticateToken,
+  allowRoles("Farmer"),
+  (_req, res) => {
+    res.json({ message: "Farmer access granted." });
+  }
+);
+
+app.get(
+  "/api/researcher/area",
+  authenticateToken,
+  allowRoles("Researcher"),
+  (_req, res) => {
+    res.json({ message: "Researcher access granted." });
+  }
+);
 app.listen(PORT, () => {
   console.log(`Orion API running at http://localhost:${PORT}`);
 });
+
