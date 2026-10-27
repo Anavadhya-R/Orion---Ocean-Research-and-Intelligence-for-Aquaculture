@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./index.css";
 import "./species.css";
 import "./species-catalog.css";
@@ -271,6 +271,66 @@ function FinancePlanner() {
 
 function App() {
   const [activePage, setActivePage] = useState("overview");
+  const [authChecking, setAuthChecking] = useState(
+    Boolean(sessionStorage.getItem("orion_token"))
+  );
+
+  useEffect(() => {
+    const token = sessionStorage.getItem("orion_token");
+
+    if (!token) {
+      sessionStorage.removeItem("orion_user");
+      setUser(null);
+      setAuthChecking(false);
+      return;
+    }
+
+    let cancelled = false;
+
+    async function verifySession() {
+      try {
+        const API_BASE = import.meta.env.VITE_API_BASE_URL || "/api";
+
+        const response = await fetch(`${API_BASE}/auth/me`, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error("Session expired or invalid");
+        }
+
+        const data = await response.json();
+        const verifiedUser = data.user || data;
+
+        if (!verifiedUser || !verifiedUser.role) {
+          throw new Error("Invalid user response");
+        }
+
+        if (!cancelled) {
+          sessionStorage.setItem("orion_user", JSON.stringify(verifiedUser));
+          setUser(verifiedUser);
+        }
+      } catch {
+        if (!cancelled) {
+          sessionStorage.removeItem("orion_token");
+          sessionStorage.removeItem("orion_user");
+          setUser(null);
+        }
+      } finally {
+        if (!cancelled) {
+          setAuthChecking(false);
+        }
+      }
+    }
+
+    verifySession();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
   const [user, setUser] = useState(() => {
     try {
       return JSON.parse(sessionStorage.getItem("orion_user")) || null;
@@ -298,11 +358,44 @@ function App() {
     }
   };
 
-  if (!user) {
-    return <Auth onAuthenticated={setUser} />;
+    if (authChecking) {
+    return (
+      <div className="auth-loading" role="status">
+        Verifying your Orion session...
+      </div>
+    );
   }
+
+  if (!user) {
+    return (
+      <Auth
+        onAuthenticated={(authenticatedUser) => {
+          setUser(authenticatedUser);
+          setActivePage("overview");
+        }}
+      />
+    );
+  }
+
+  const role = user.role;
+  const allowedPages =
+  role === "Admin"
+    ? ["overview", "species", "habitats", "resources", "finance"]
+    : role === "Farmer"
+      ? ["overview", "species", "habitats", "resources"]
+      : role === "Researcher"
+        ? ["overview", "species", "habitats"]
+        : [];
+  const visibleNavigation = navigation.filter((item) =>
+    allowedPages.includes(item.id)
+  );
+
+  const safeActivePage = allowedPages.includes(activePage)
+    ? activePage
+    : "overview";
+
   const activeLabel =
-    navigation.find((item) => item.id === activePage)?.label || "Overview";
+    navigation.find((item) => item.id === safeActivePage)?.label || "Overview";
 
   const pageDescriptions = {
     overview: "Your ocean research workspace, all in one place.",
@@ -326,7 +419,7 @@ function App() {
         <div className="workspace-label">WORKSPACE</div>
 
         <nav className="navigation">
-          {navigation.map((item) => (
+          {visibleNavigation.map((item) => (
             <button
               key={item.id}
               className={`nav-item ${activePage === item.id ? "active" : ""}`}
@@ -386,7 +479,7 @@ function App() {
                 <span className="eyebrow-line" /> OCEAN RESEARCH PLATFORM
               </div>
               <h1>
-                {activePage === "overview" ? (
+                {safeActivePage === "overview" ? (
                   <>A clearer view of <span>our oceans.</span></>
                 ) : activeLabel}
               </h1>
@@ -543,13 +636,13 @@ function App() {
                 </div>
               </section>
             </>
-          ) : activePage === "species" ? (
+          ) : safeActivePage === "species" ? (
             <SpeciesExplorer />
-          ) : activePage === "habitats" ? (
+          ) :safeActivePage === "habitats" ? (
             <HabitatInsights />
-          ) : activePage === "resources" ? (
+          ) : safeActivePage === "resources" ? (
             <ResourceManager />
-          ) : activePage === "finance" ? (
+          ) : safeActivePage === "finance" ? (
             <FinancePlanner />
           ) : (
             <EmptyState
