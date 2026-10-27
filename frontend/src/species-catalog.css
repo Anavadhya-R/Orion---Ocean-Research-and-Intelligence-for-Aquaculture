@@ -1,0 +1,61 @@
+/* Species Explorer: catalogue workspace, intentionally different from the overview hero */
+.species-catalog-page { gap: 20px; }
+.species-catalog-page .catalog-toolbar { display:flex; align-items:flex-end; justify-content:space-between; gap:20px; padding: 2px 0 18px; border-bottom:1px solid #E5E5DC; }
+.species-catalog-page .catalog-title-row { display:flex; align-items:center; gap:14px; }
+.species-catalog-page .catalog-title-icon { display:grid; place-items:center; width:48px; height:48px; flex-shrink:0; border-radius:14px; background:#DDECE9; color:#477F7B; font-size:27px; }
+.species-catalog-page .catalog-overline { display:block; color:#7DA7A1; font-size:9px; font-weight:800; letter-spacing:1.5px; }
+.species-catalog-page .catalog-heading h2 { margin:5px 0 0; color:#24445A; font-family:'Manrope',sans-serif; font-size:23px; letter-spacing:-.7px; }
+.species-catalog-page .catalog-heading > p { margin:11px 0 0; color:#81949A; font-size:11px; line-height:1.7; }
+.species-catalog-page .catalog-source-link { display:inline-flex; align-items:center; gap:14px; flex-shrink:0; padding:11px 14px; border:1px solid #DCE6E2; border-radius:10px; background:#FFFEFB; color:#4C777B; font-size:10px; font-weight:700; }
+.species-catalog-page .catalog-source-link span { font-size:14px; }
+.species-catalog-page .catalog-search-strip { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 16px; border:1px solid #E6E7DF; border-radius:13px; background:#FFFEFB; }
+.species-catalog-page .catalog-search-field { display:flex; align-items:center; gap:11px; flex:1; min-width:0; color:#6F9A99; }
+.species-catalog-page .catalog-search-field > span { font-size:24px; }
+.species-catalog-page .catalog-search-field input { width:100%; min-width:0; padding:8px 0; border:0; outline:none; background:transparent; color:#24445A; font:inherit; font-size:12px; }
+.species-catalog-page .catalog-search-field input::placeholder { color:#A0ADAD; }
+.species-catalog-page .catalog-search-field button { border:0; background:transparent; color:#82979A; font-size:21px; cursor:pointer; }
+.species-catalog-page .catalog-source-status { display:flex; align-items:center; gap:8px; white-space:nowrap; color:#9A8B78; font-size:9px; }
+.species-catalog-page .catalog-status-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#D4B58B; }
+.species-catalog-page .catalog-layout { display:grid; grid-template-columns:minmax(190px, .72fr) minmax(0, 2.28fr); align-items:start; gap:17px; }
+.species-catalog-page .catalog-filters { padding:20px 17px; border:1px solid #E5E7DF; border-radius:14px; background:#F9F8F2; }
+.species-catalog-page .catalog-panel-heading { display:flex; align-items:center; justify-content:space-between; color:#88A29F; font-size:9px; font-weight:800; letter-spacing:1.2px; }
+.species-catalog-page .catalog-filter-symbol { font-size:18px; }
+.species-catalog-page .catalog-filters h3 { margin:24px 0 12px; font-family:'Manrope',sans-serif; font-size:13px; }
+.species-catalog-page .catalog-habitat-list { display:grid; gap:5px; }
+.species-catalog-page .catalog-habitat-option { display:flex; align-items:center; gap:9px; width:100%; padding:10px 8px; border:1px solid transparent; border-radius:8px; background:transparent; color:#718890; text-align:left; font:inherit; font-size:10px; cursor:pointer; }
+.species-catalog-page .catalog-habitat-option.selected { border-color:#D7E6E0; background:#E7F0EB; color:#477F7B; font-weight:700; }
+.species-catalog-page .catalog-radio { width:15px; color:#7BA9A2; font-size:12px; }
+.species-catalog-page .catalog-filter-note { display:flex; gap:9px; margin-top:24px; padding:11px; border-radius:9px; background:#F0EEE5; color:#8D958F; }
+.species-catalog-page .catalog-filter-note > span { display:grid; place-items:center; flex-shrink:0; width:16px; height:16px; border:1px solid #B7C4BB; border-radius:50%; font-size:10px; }
+.species-catalog-page .catalog-filter-note p { margin:0; font-size:9px; line-height:1.7; }
+.species-catalog-page .catalog-results { min-width:0; padding:22px; border:1px solid #E5E7DF; border-radius:14px; background:#FFFEFB; }
+.species-catalog-page .catalog-results-heading { display:flex; justify-content:space-between; align-items:center; gap:15px; padding-bottom:18px; border-bottom:1px solid #EEEFE8; }
+.species-catalog-page .catalog-results-heading h2 { margin:6px 0 5px; font-family:'Manrope',sans-serif; font-size:19px; letter-spacing:-.5px; }
+.species-catalog-page .catalog-results-heading p { margin:0; color:#8A9A9C; font-size:10px; }
+.species-catalog-page .catalog-record-count { color:#8BA9A5; font-family:'Manrope',sans-serif; font-size:25px; font-weight:700; white-space:nowrap; }
+.species-catalog-page .catalog-record-count small { font-family:'DM Sans',sans-serif; font-size:9px; font-weight:500; }
+.species-catalog-page .catalog-empty-state { display:flex; flex-direction:column; align-items:center; padding:30px 20px 35px; text-align:center; }
+.species-catalog-page .catalog-empty-graphic { position:relative; display:grid; place-items:center; width:100px; height:86px; margin-bottom:16px; }
+.species-catalog-page .catalog-graphic-orbit { position:absolute; border:1px solid #B9D5D0; border-radius:50%; transform:rotate(-25deg); }
+.species-catalog-page .orbit-one { width:86px; height:42px; }
+.species-catalog-page .orbit-two { width:42px; height:86px; border-color:#D5CBE5; transform:rotate(35deg); }
+.species-catalog-page .catalog-graphic-core { display:grid; place-items:center; width:45px; height:45px; border-radius:15px; background:#E1EFEB; color:#609691; font-size:25px; }
+.species-catalog-page .catalog-empty-kicker { color:#9AABA5; font-size:8px; font-weight:800; letter-spacing:1.4px; }
+.species-catalog-page .catalog-empty-state h3 { margin:10px 0 8px; font-family:'Manrope',sans-serif; font-size:16px; }
+.species-catalog-page .catalog-empty-state p { max-width:420px; margin:0; color:#87999C; font-size:10px; line-height:1.9; }
+.species-catalog-page .catalog-open-mapper { display:inline-flex; align-items:center; gap:12px; margin-top:18px; padding:11px 14px; border-radius:9px; background:#31576A; color:white; font-size:10px; font-weight:700; }
+.species-catalog-page .catalog-results-footer { display:flex; justify-content:space-between; gap:12px; padding-top:13px; border-top:1px solid #EEEFE8; color:#9AA6A3; font-size:9px; }
+.species-catalog-page .catalog-results-footer > span:first-child { display:flex; align-items:center; gap:7px; }
+.species-catalog-page .catalog-reference-row { display:grid; grid-template-columns:1.1fr 1fr 1fr; align-items:center; gap:12px; }
+.species-catalog-page .catalog-reference-intro h3 { margin:6px 0; font-family:'Manrope',sans-serif; font-size:13px; }
+.species-catalog-page .catalog-reference-intro p { margin:0; color:#89999C; font-size:9px; line-height:1.7; }
+.species-catalog-page .catalog-reference-card { display:flex; align-items:center; gap:10px; min-width:0; padding:13px; border:1px solid #E5E7DF; border-radius:12px; background:#FFFEFB; }
+.species-catalog-page .reference-icon { display:grid; place-items:center; width:34px; height:34px; flex-shrink:0; border-radius:10px; font-size:17px; }
+.species-catalog-page .reference-mint { background:#E1F0E9; color:#639B89; }
+.species-catalog-page .reference-lilac { background:#EEE7F5; color:#9182B3; }
+.species-catalog-page .catalog-reference-card > span:nth-child(2) { display:grid; flex:1; min-width:0; gap:4px; }
+.species-catalog-page .catalog-reference-card strong { font-size:10px; }
+.species-catalog-page .catalog-reference-card small { color:#89999C; font-size:9px; }
+.species-catalog-page .catalog-reference-card > b { color:#83A5A3; }
+@media(max-width:850px) { .species-catalog-page .catalog-layout { grid-template-columns:1fr; } .species-catalog-page .catalog-habitat-list { grid-template-columns:repeat(2,minmax(0,1fr)); } .species-catalog-page .catalog-reference-row { grid-template-columns:1fr 1fr; } .species-catalog-page .catalog-reference-intro { grid-column:1/-1; } }
+@media(max-width:560px) { .species-catalog-page .catalog-toolbar,.species-catalog-page .catalog-search-strip { align-items:stretch; flex-direction:column; } .species-catalog-page .catalog-reference-row { grid-template-columns:1fr; } .species-catalog-page .catalog-reference-intro { grid-column:auto; } .species-catalog-page .catalog-results { padding:15px; } .species-catalog-page .catalog-source-status { white-space:normal; } }
