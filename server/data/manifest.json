@@ -1,0 +1,256 @@
+{
+  "disclaimer": "All ORION data is synthetic / simulated and must not be used for real investment or operational decisions.",
+  "tables": {
+    "sum_finance_monthly": {
+      "rows": 192,
+      "columns": [
+        "txn_year",
+        "txn_month",
+        "year_month",
+        "transaction_type",
+        "category",
+        "transactions",
+        "total_usd"
+      ]
+    },
+    "sum_habitat_by_basin": {
+      "rows": 17,
+      "columns": [
+        "ocean_basin",
+        "suitability_class",
+        "habitat_cells",
+        "avg_suitability_score",
+        "avg_water_quality_score",
+        "avg_env_risk_score",
+        "pct_of_basin"
+      ]
+    },
+    "sum_inventory_status": {
+      "rows": 66,
+      "columns": [
+        "ocean_basin",
+        "resource_category",
+        "resource_status",
+        "items",
+        "stock_value_usd",
+        "pct_of_category"
+      ]
+    },
+    "sum_ocean_basin_month": {
+      "rows": 180,
+      "columns": [
+        "ocean_basin",
+        "obs_year",
+        "obs_month",
+        "measurements",
+        "avg_sst_c",
+        "avg_water_temp_c",
+        "avg_salinity_psu",
+        "avg_dissolved_oxygen_mg_l",
+        "avg_ph",
+        "avg_chlorophyll_mg_m3",
+        "avg_nitrate_umol_l",
+        "avg_wave_height_m",
+        "avg_current_speed_m_s"
+      ]
+    },
+    "sum_overview_kpis": {
+      "rows": 14,
+      "columns": [
+        "metric",
+        "metric_value",
+        "unit"
+      ]
+    },
+    "sum_production_by_basin_year": {
+      "rows": 8,
+      "columns": [
+        "ocean_basin",
+        "reporting_year",
+        "production_records",
+        "active_sites",
+        "total_tonnes",
+        "avg_tonnes_per_record",
+        "feed_conversion_ratio",
+        "avg_mortality_pct",
+        "avg_survival_pct",
+        "total_revenue_usd",
+        "total_cost_usd",
+        "gross_profit_usd",
+        "profit_margin_pct",
+        "revenue_per_tonne_usd",
+        "prev_year_tonnes",
+        "tonnes_yoy_pct",
+        "revenue_yoy_pct",
+        "profit_yoy_pct"
+      ]
+    },
+    "sum_production_by_country_year": {
+      "rows": 76,
+      "columns": [
+        "country_or_region",
+        "reporting_year",
+        "production_records",
+        "active_sites",
+        "total_tonnes",
+        "avg_tonnes_per_record",
+        "feed_conversion_ratio",
+        "avg_mortality_pct",
+        "avg_survival_pct",
+        "total_revenue_usd",
+        "total_cost_usd",
+        "gross_profit_usd",
+        "profit_margin_pct",
+        "revenue_per_tonne_usd",
+        "prev_year_tonnes",
+        "tonnes_yoy_pct",
+        "revenue_yoy_pct",
+        "profit_yoy_pct"
+      ]
+    },
+    "sum_production_by_site_type_year": {
+      "rows": 10,
+      "columns": [
+        "site_type",
+        "reporting_year",
+        "production_records",
+        "active_sites",
+        "total_tonnes",
+        "avg_tonnes_per_record",
+        "feed_conversion_ratio",
+        "avg_mortality_pct",
+        "avg_survival_pct",
+        "total_revenue_usd",
+        "total_cost_usd",
+        "gross_profit_usd",
+        "profit_margin_pct",
+        "revenue_per_tonne_usd",
+        "prev_year_tonnes",
+        "tonnes_yoy_pct",
+        "revenue_yoy_pct",
+        "profit_yoy_pct"
+      ]
+    },
+    "sum_production_by_species_group_basin": {
+      "rows": 34,
+      "columns": [
+        "species_group",
+        "ocean_basin",
+        "reporting_year",
+        "production_records",
+        "active_sites",
+        "total_tonnes",
+        "avg_tonnes_per_record",
+        "feed_conversion_ratio",
+        "avg_mortality_pct",
+        "avg_survival_pct",
+        "total_revenue_usd",
+        "total_cost_usd",
+        "gross_profit_usd",
+        "profit_margin_pct",
+        "revenue_per_tonne_usd",
+        "prev_year_tonnes",
+        "tonnes_yoy_pct",
+        "revenue_yoy_pct",
+        "profit_yoy_pct"
+      ]
+    },
+    "sum_production_by_species_year": {
+      "rows": 104,
+      "columns": [
+        "species_id",
+        "common_name",
+        "scientific_name",
+        "species_group",
+        "aquaculture_potential",
+        "reporting_year",
+        "production_records",
+        "active_sites",
+        "total_tonnes",
+        "avg_tonnes_per_record",
+        "feed_conversion_ratio",
+        "avg_mortality_pct",
+        "avg_survival_pct",
+        "total_revenue_usd",
+        "total_cost_usd",
+        "gross_profit_usd",
+        "profit_margin_pct",
+        "revenue_per_tonne_usd",
+        "prev_year_tonnes",
+        "tonnes_yoy_pct",
+        "revenue_yoy_pct",
+        "profit_yoy_pct"
+      ]
+    },
+    "sum_production_monthly": {
+      "rows": 24,
+      "columns": [
+        "reporting_year",
+        "reporting_month",
+        "year_month",
+        "production_records",
+        "active_sites",
+        "total_tonnes",
+        "avg_tonnes_per_record",
+        "feed_conversion_ratio",
+        "avg_mortality_pct",
+        "avg_survival_pct",
+        "total_revenue_usd",
+        "total_cost_usd",
+        "gross_profit_usd",
+        "profit_margin_pct",
+        "revenue_per_tonne_usd",
+        "prev_month_tonnes",
+        "tonnes_mom_pct",
+        "same_month_last_year_tonnes",
+        "tonnes_yoy_pct",
+        "tonnes_3m_moving_avg"
+      ]
+    },
+    "sum_site_performance": {
+      "rows": 230,
+      "columns": [
+        "site_id",
+        "site_name",
+        "country_or_region",
+        "ocean_basin",
+        "site_type",
+        "site_status",
+        "capacity_tonnes_year",
+        "months_reported",
+        "species_farmed",
+        "total_tonnes",
+        "feed_conversion_ratio",
+        "avg_mortality_pct",
+        "total_revenue_usd",
+        "total_cost_usd",
+        "gross_profit_usd",
+        "profit_margin_pct",
+        "capacity_utilisation_pct",
+        "profit_rank_in_basin",
+        "tonnes_rank_global"
+      ]
+    },
+    "sum_species_ranking": {
+      "rows": 52,
+      "columns": [
+        "species_id",
+        "common_name",
+        "species_group",
+        "aquaculture_potential",
+        "sites_farming",
+        "basins",
+        "total_tonnes",
+        "total_revenue_usd",
+        "gross_profit_usd",
+        "profit_margin_pct",
+        "feed_conversion_ratio",
+        "avg_mortality_pct",
+        "tonnes_rank",
+        "profit_rank",
+        "margin_rank",
+        "pct_of_total_tonnes"
+      ]
+    }
+  }
+}

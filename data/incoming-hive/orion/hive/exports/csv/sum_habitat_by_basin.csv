@@ -1,0 +1,18 @@
+ocean_basin,suitability_class,habitat_cells,avg_suitability_score,avg_water_quality_score,avg_env_risk_score,pct_of_basin
+Arctic,High,190,76.26,99.09,17.68,18.6
+Arctic,Low,59,57.09,70.01,36.99,5.8
+Arctic,Moderate,770,67.03,95.67,22.94,75.6
+Atlantic,High,1834,78.64,90.06,21.95,64.0
+Atlantic,Low,38,58.07,66.14,39.54,1.3
+Atlantic,Moderate,676,67.34,79.02,28.19,23.6
+Atlantic,Very High,316,85.66,96.58,14.36,11.0
+Indian,High,1286,78.64,80.34,13.93,59.2
+Indian,Low,42,55.75,51.73,29.86,1.9
+Indian,Moderate,511,66.63,73.31,19.52,23.5
+Indian,Very High,333,85.98,93.94,12.29,15.3
+Pacific,High,1814,79.06,85.74,21.01,50.5
+Pacific,Low,36,58.18,62.26,36.5,1.0
+Pacific,Moderate,659,67.3,75.51,26.97,18.4
+Pacific,Very High,1082,86.58,94.98,13.28,30.1
+Southern,Low,568,57.06,91.51,49.42,59.5
+Southern,Moderate,386,61.43,99.13,44.55,40.5

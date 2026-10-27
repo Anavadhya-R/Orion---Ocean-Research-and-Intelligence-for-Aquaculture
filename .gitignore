@@ -3,3 +3,16 @@ node_modules/
 .env.*
 !.env.example
 server/users.json
+
+# Local backups and archives
+*.backup
+*.working-backup
+
+# Build output
+dist/
+build/
+coverage/
+
+# Local environment and editor files
+.vscode/
+.DS_Store

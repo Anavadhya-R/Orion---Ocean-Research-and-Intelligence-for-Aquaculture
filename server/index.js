@@ -1,4 +1,4 @@
-﻿
+
 const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
@@ -18,6 +18,8 @@ if (!JWT_SECRET || JWT_SECRET.length < 32) {
 
 app.use(cors());
 app.use(express.json({ limit: "20kb" }));
+app.use("/api/data", require("./data-routes"));
+app.use("/api/unsplash", require("./unsplash-routes"));
 
 const usersFile = path.join(__dirname, "users.json");
 
@@ -45,6 +47,31 @@ function createToken(user) {
     { expiresIn: "2h" }
   );
 }
+
+app.get("/api/auth/me", async (req, res) => {
+  try {
+    const authHeader = req.headers.authorization || "";
+    const token = authHeader.startsWith("Bearer ")
+      ? authHeader.slice(7)
+      : "";
+
+    if (!token) {
+      return res.status(401).json({ message: "Authentication required." });
+    }
+
+    const payload = jwt.verify(token, JWT_SECRET);
+    const users = await readUsers();
+    const user = users.find((item) => item.id === payload.sub);
+
+    if (!user) {
+      return res.status(401).json({ message: "User account not found." });
+    }
+
+    return res.json({ user: publicUser(user) });
+  } catch (error) {
+    return res.status(401).json({ message: "Session expired or invalid." });
+  }
+});
 
 app.get("/api/health", (_req, res) => {
   res.json({ status: "ok" });
@@ -137,84 +164,6 @@ app.post("/api/auth/logout", (_req, res) => {
   res.json({ message: "Logged out. Clear the client session." });
 });
 
-
-// Authenticate using the bearer token and load the current role from storage.
-async function authenticateToken(req, res, next) {
-  try {
-    const header = req.headers.authorization || "";
-    const match = header.match(/^Bearer\s+(.+)$/i);
-
-    if (!match) {
-      return res.status(401).json({ message: "Authentication required." });
-    }
-
-    let payload;
-    try {
-      payload = jwt.verify(match[1], JWT_SECRET);
-    } catch {
-      return res.status(401).json({ message: "Invalid or expired token." });
-    }
-
-    const users = await readUsers();
-    const user = users.find((item) => item.id === payload.sub);
-
-    if (!user) {
-      return res.status(401).json({ message: "Account not found." });
-    }
-
-    req.user = user;
-    next();
-  } catch (error) {
-    console.error("Authentication error:", error);
-    return res.status(500).json({ message: "Authentication failed." });
-  }
-}
-
-function allowRoles(...roles) {
-  return (req, res, next) => {
-    if (!req.user || !roles.includes(req.user.role)) {
-      return res.status(403).json({ message: "You do not have permission." });
-    }
-    next();
-  };
-}
-
-app.get("/api/auth/me", authenticateToken, (req, res) => {
-  res.json({ user: publicUser(req.user) });
-});
-
-app.get(
-  "/api/admin/users",
-  authenticateToken,
-  allowRoles("Admin"),
-  async (_req, res) => {
-    try {
-      const users = await readUsers();
-      res.json({ users: users.map(publicUser) });
-    } catch (error) {
-      console.error("Admin users error:", error);
-      res.status(500).json({ message: "Could not load users." });
-    }
-  }
-);
-
-app.get(
-  "/api/farmer/area",
-  authenticateToken,
-  allowRoles("Farmer"),
-  (_req, res) => {
-    res.json({ message: "Farmer access granted." });
-  }
-);
-
-app.get(
-  "/api/researcher/area",
-  authenticateToken,
-  allowRoles("Researcher"),
-  (_req, res) => {
-    res.json({ message: "Researcher access granted." });
-  }
-);
 app.listen(PORT, () => {
   console.log(`Orion API running at http://localhost:${PORT}`);
 });

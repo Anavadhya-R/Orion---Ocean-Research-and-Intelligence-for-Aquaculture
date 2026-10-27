@@ -1,0 +1,9 @@
+data/csv/
+*.xlsx
+*.zip
+docs/query_results/
+.env
+*.pem
+*.key
+*credentials*
+__pycache__/

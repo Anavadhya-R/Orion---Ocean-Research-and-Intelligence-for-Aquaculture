@@ -1,0 +1,101 @@
+transaction_id,site_id,transaction_date,transaction_type,category,description,amount_usd,payment_method,related_production_id,is_simulated
+T0000001,S0005,2023-01-01,expense,Feed,SIMULATED Feed - Red drum,17787.63,Bank transfer,P000048,true
+T0000002,S0027,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Mozambique tilapia,4703.73,Credit account,P000258,true
+T0000003,S0031,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Mozambique tilapia,1817.92,Bank transfer,P000306,true
+T0000004,S0031,2023-01-01,expense,Energy,SIMULATED Energy - Spotted seatrout,653.54,Bank transfer,P000327,true
+T0000005,S0036,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Spotted seatrout,9451.96,Credit account,P000460,true
+T0000006,S0051,2023-01-01,expense,Feed,SIMULATED Feed - Spotted seatrout,426655.94,Bank transfer,P000612,true
+T0000007,S0053,2023-01-01,expense,Equipment,SIMULATED Equipment - Rainbow trout,8553.25,Credit account,P000634,true
+T0000008,S0057,2023-01-01,expense,Labour,SIMULATED Labour - Spotted seatrout,13621.07,Bank transfer,P000658,true
+T0000009,S0057,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Spotted seatrout,5397.08,Bank transfer,P000658,true
+T0000010,S0062,2023-01-01,expense,Labour,SIMULATED Labour - Purple sea urchin,7063.09,Credit account,P000706,true
+T0000011,S0062,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Purple sea urchin,2148.69,Bank transfer,P000706,true
+T0000012,S0070,2023-01-01,expense,Feed,SIMULATED Feed - Mozambique tilapia,29689.07,Bank transfer,P000771,true
+T0000013,S0070,2023-01-01,expense,Labour,SIMULATED Labour - Mozambique tilapia,10159.06,Bank transfer,P000771,true
+T0000014,S0095,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Mozambique tilapia,983.31,Credit account,P000929,true
+T0000015,S0132,2023-01-01,expense,Transport,SIMULATED Transport - Spotted seatrout,1029.5,Bank transfer,P001217,true
+T0000016,S0144,2023-01-01,expense,Feed,SIMULATED Feed - Spotted seatrout,9566.04,Credit account,P001354,true
+T0000017,S0157,2023-01-01,expense,Labour,SIMULATED Labour - Spotted seatrout,3827.66,Bank transfer,P001492,true
+T0000018,S0202,2023-01-01,expense,Equipment,SIMULATED Equipment - Spotted seatrout,420.64,Card,P001718,true
+T0000019,S0285,2023-01-01,expense,Equipment,SIMULATED Equipment - Mozambique tilapia,519.26,Bank transfer,P002183,true
+T0000020,S0285,2023-01-01,expense,Feed,SIMULATED Feed - Mozambique tilapia,11237.76,Bank transfer,P002183,true
+T0000021,S0289,2023-01-01,expense,Equipment,SIMULATED Equipment - Giant river prawn,1670.23,Bank transfer,P002207,true
+T0000022,S0315,2023-01-01,expense,Transport,SIMULATED Transport - Sea lettuce,2934.93,Credit account,P002324,true
+T0000023,S0317,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Giant clam,1645.74,Bank transfer,P002371,true
+T0000024,S0340,2023-01-01,expense,Labour,SIMULATED Labour - Spotted seatrout,38959.78,Credit account,P002484,true
+T0000025,S0340,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Spotted seatrout,13786.02,Bank transfer,P002484,true
+T0000026,S0351,2023-01-01,expense,Energy,SIMULATED Energy - Giant clam,49363.17,Credit account,P002530,true
+T0000027,S0383,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Spotted seatrout,210.36,Bank transfer,P002731,true
+T0000028,S0396,2023-01-01,expense,Labour,SIMULATED Labour - Spotted seatrout,6233.53,Credit account,P002841,true
+T0000029,S0442,2023-01-01,expense,Transport,SIMULATED Transport - Asian green mussel,2149.58,Bank transfer,P003261,true
+T0000030,S0460,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Mozambique tilapia,1520.88,Bank transfer,P003404,true
+T0000031,S0481,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Spotted seatrout,10368.47,Bank transfer,P003588,true
+T0000032,S0481,2023-01-01,expense,Transport,SIMULATED Transport - Spotted seatrout,7701.9,Cash,P003588,true
+T0000033,S0481,2023-01-01,expense,Energy,SIMULATED Energy - Kuruma prawn,14298.08,Cash,P003612,true
+T0000034,S0488,2023-01-01,expense,Transport,SIMULATED Transport - Atlantic cod,20555.05,Bank transfer,P003655,true
+T0000035,S0497,2023-01-01,expense,Equipment,SIMULATED Equipment - Asian green mussel,2510.99,Bank transfer,P003702,true
+T0000036,S0497,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Asian green mussel,4843.62,Card,P003702,true
+T0000037,S0503,2023-01-01,expense,Energy,SIMULATED Energy - Mud crab,7225.63,Cash,P003771,true
+T0000038,S0604,2023-01-01,expense,Transport,SIMULATED Transport - Ocellaris clownfish,12368.64,Bank transfer,P004608,true
+T0000039,S0608,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Spotted seatrout,1764.24,Bank transfer,P004677,true
+T0000040,S0620,2023-01-01,expense,Equipment,SIMULATED Equipment - Giant clam,5326.58,Bank transfer,P004721,true
+T0000041,S0620,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Giant clam,10001.11,Credit account,P004721,true
+T0000042,S0623,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Red drum,1363.04,Card,P004788,true
+T0000043,S0641,2023-01-01,expense,Transport,SIMULATED Transport - Atlantic halibut,3003.24,Bank transfer,P004856,true
+T0000044,S0652,2023-01-01,expense,Feed,SIMULATED Feed - Ocellaris clownfish,125914.62,Card,P004946,true
+T0000045,S0669,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Pacific bluefin tuna,1141.23,Card,P005105,true
+T0000046,S0690,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Rainbow trout,5123.24,Credit account,P005245,true
+T0000047,S0691,2023-01-01,expense,Transport,SIMULATED Transport - Mediterranean mussel,1567.33,Credit account,P005269,true
+T0000048,S0709,2023-01-01,expense,Transport,SIMULATED Transport - Spotted seatrout,3409.29,Credit account,P005397,true
+T0000049,S0709,2023-01-01,expense,Labour,SIMULATED Labour - European seabass,40442.23,Bank transfer,P005421,true
+T0000050,S0714,2023-01-01,expense,Transport,SIMULATED Transport - Spotted seatrout,1076.72,Bank transfer,P005445,true
+T0000051,S0768,2023-01-01,expense,Equipment,SIMULATED Equipment - Asian green mussel,5022.86,Bank transfer,P005702,true
+T0000052,S0790,2023-01-01,expense,Maintenance,SIMULATED Maintenance - Asian green mussel,7005.5,Card,P005860,true
+T0000053,S0804,2023-01-01,expense,Labour,SIMULATED Labour - Asian green mussel,4333.61,Bank transfer,P005997,true
+T0000054,S0886,2023-01-01,expense,Energy,SIMULATED Energy - Mozambique tilapia,1235.75,Bank transfer,P006638,true
+T0000055,S0917,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Spotted seatrout,24572.64,Bank transfer,P006768,true
+T0000056,S0930,2023-01-01,expense,Other operating costs,SIMULATED Other operating costs - Rainbow trout,2055.92,Card,P006897,true
+T0000057,S0936,2023-01-01,expense,Energy,SIMULATED Energy - Spotted seatrout,2289.99,Card,P006964,true
+T0000058,S0942,2023-01-01,expense,Feed,SIMULATED Feed - Atlantic cod,42195.84,Bank transfer,P007011,true
+T0000059,S0991,2023-01-01,expense,Energy,SIMULATED Energy - Asian green mussel,2345.03,Card,P007257,true
+T0000060,S0015,2023-01-02,expense,Maintenance,SIMULATED Maintenance - Spotted seatrout,14166.38,Bank transfer,P000165,true
+T0000061,S0015,2023-01-02,expense,Other operating costs,SIMULATED Other operating costs - Spotted seatrout,21837.88,Credit account,P000165,true
+T0000062,S0031,2023-01-02,expense,Feed,SIMULATED Feed - Mozambique tilapia,16661.35,Bank transfer,P000306,true
+T0000063,S0034,2023-01-02,expense,Feed,SIMULATED Feed - European seabass,11960.27,Credit account,P000413,true
+T0000064,S0036,2023-01-02,expense,Equipment,SIMULATED Equipment - Spotted seatrout,4559.34,Bank transfer,P000460,true
+T0000065,S0040,2023-01-02,expense,Labour,SIMULATED Labour - Giant river prawn,10614.01,Credit account,P000484,true
+T0000066,S0046,2023-01-02,expense,Other operating costs,SIMULATED Other operating costs - European lobster,6037.66,Bank transfer,P000508,true
+T0000067,S0050,2023-01-02,expense,Labour,SIMULATED Labour - Spotted seatrout,791.86,Credit account,P000567,true
+T0000068,S0062,2023-01-02,expense,Other operating costs,SIMULATED Other operating costs - Sea lettuce,820.93,Bank transfer,P000682,true
+T0000069,S0097,2023-01-02,expense,Energy,SIMULATED Energy - Atlantic cod,3860.73,Bank transfer,P000975,true
+T0000070,S0130,2023-01-02,expense,Energy,SIMULATED Energy - Giant clam,2594.56,Bank transfer,P001194,true
+T0000071,S0132,2023-01-02,expense,Maintenance,SIMULATED Maintenance - Spotted seatrout,1148.09,Bank transfer,P001217,true
+T0000072,S0136,2023-01-02,expense,Equipment,SIMULATED Equipment - Red seaweed (Gracilaria),121.85,Bank transfer,P001307,true
+T0000073,S0141,2023-01-02,expense,Transport,SIMULATED Transport - Giant clam,13190.23,Card,P001330,true
+T0000074,S0145,2023-01-02,expense,Maintenance,SIMULATED Maintenance - Spotted seatrout,12049.5,Bank transfer,P001399,true
+T0000075,S0152,2023-01-02,expense,Labour,SIMULATED Labour - Spotted seatrout,42486.09,Bank transfer,P001468,true
+T0000076,S0152,2023-01-02,expense,Other operating costs,SIMULATED Other operating costs - Spotted seatrout,15917.05,Bank transfer,P001468,true
+T0000077,S0203,2023-01-02,expense,Equipment,SIMULATED Equipment - Nile tilapia,305.38,Bank transfer,P001742,true
+T0000078,S0289,2023-01-02,expense,Labour,SIMULATED Labour - Giant river prawn,10896.48,Bank transfer,P002207,true
+T0000079,S0320,2023-01-02,expense,Labour,SIMULATED Labour - Arctic char,1471.66,Bank transfer,P002441,true
+T0000080,S0320,2023-01-02,expense,Other operating costs,SIMULATED Other operating costs - Arctic char,586.17,Credit account,P002441,true
+T0000081,S0365,2023-01-02,expense,Feed,SIMULATED Feed - Giant river prawn,7385.72,Bank transfer,P002576,true
+T0000082,S0383,2023-01-02,expense,Transport,SIMULATED Transport - Spotted seatrout,136.96,Card,P002731,true
+T0000083,S0401,2023-01-02,expense,Equipment,SIMULATED Equipment - Spotted seatrout,10421.0,Bank transfer,P002901,true
+T0000084,S0401,2023-01-02,expense,Energy,SIMULATED Energy - Milkfish,11214.63,Credit account,P002924,true
+T0000085,S0401,2023-01-02,expense,Transport,SIMULATED Transport - Milkfish,6614.74,Bank transfer,P002924,true
+T0000086,S0407,2023-01-02,expense,Equipment,SIMULATED Equipment - Sandfish sea cucumber,1449.55,Bank transfer,P002994,true
+T0000087,S0425,2023-01-02,expense,Other operating costs,SIMULATED Other operating costs - Japanese kelp,2892.37,Card,P003098,true
+T0000088,S0425,2023-01-02,expense,Transport,SIMULATED Transport - Japanese kelp,2447.51,Bank transfer,P003098,true
+T0000089,S0442,2023-01-02,expense,Maintenance,SIMULATED Maintenance - Giant clam,8449.22,Credit account,P003237,true
+T0000090,S0481,2023-01-02,expense,Transport,SIMULATED Transport - Kuruma prawn,9808.31,Bank transfer,P003612,true
+T0000091,S0540,2023-01-02,expense,Equipment,SIMULATED Equipment - Giant clam,5470.47,Bank transfer,P004053,true
+T0000092,S0602,2023-01-02,expense,Transport,SIMULATED Transport - Atlantic bluefin tuna,11318.77,Bank transfer,P004560,true
+T0000093,S0604,2023-01-02,expense,Feed,SIMULATED Feed - Spotted seatrout,75051.4,Bank transfer,P004584,true
+T0000094,S0604,2023-01-02,expense,Maintenance,SIMULATED Maintenance - Ocellaris clownfish,14756.57,Bank transfer,P004608,true
+T0000095,S0652,2023-01-02,expense,Feed,SIMULATED Feed - Mozambique tilapia,95138.93,Card,P004922,true
+T0000096,S0683,2023-01-02,expense,Equipment,SIMULATED Equipment - Giant clam,32182.06,Bank transfer,P005175,true
+T0000097,S0685,2023-01-02,expense,Equipment,SIMULATED Equipment - European seabass,3704.7,Bank transfer,P005197,true
+T0000098,S0685,2023-01-02,expense,Feed,SIMULATED Feed - Common sole,33662.12,Cash,P005221,true
+T0000099,S0740,2023-01-02,expense,Feed,SIMULATED Feed - Spotted seatrout,32473.49,Card,P005545,true
+T0000100,S0812,2023-01-02,expense,Energy,SIMULATED Energy - Spotted seatrout,9669.31,Credit account,P006065,true

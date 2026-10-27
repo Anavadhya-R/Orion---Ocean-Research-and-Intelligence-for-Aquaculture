@@ -1,0 +1,67 @@
+ocean_basin,resource_category,resource_status,items,stock_value_usd,pct_of_category
+Arctic,Equipment,In_Stock,16,195232.11,76.2
+Arctic,Equipment,Low_Stock,4,15517.96,19.0
+Arctic,Equipment,Out_of_Stock,1,0.0,4.8
+Arctic,Feed,In_Stock,16,377281.46,76.2
+Arctic,Feed,Low_Stock,5,26319.33,23.8
+Arctic,Maintenance materials,In_Stock,20,104862.8,95.2
+Arctic,Maintenance materials,Out_of_Stock,1,0.0,4.8
+Arctic,Medicines,In_Stock,11,62333.6,78.6
+Arctic,Medicines,Low_Stock,2,2598.7,14.3
+Arctic,Medicines,Out_of_Stock,1,0.0,7.1
+Arctic,Seed stock,In_Stock,11,1493935.15,100.0
+Arctic,Water-quality testing supplies,In_Stock,21,25979.02,100.0
+Atlantic,Equipment,In_Stock,163,2438300.73,90.6
+Atlantic,Equipment,Low_Stock,14,38839.52,7.8
+Atlantic,Equipment,Out_of_Stock,3,0.0,1.7
+Atlantic,Feed,In_Stock,123,2573572.57,85.4
+Atlantic,Feed,Low_Stock,16,65401.73,11.1
+Atlantic,Feed,Out_of_Stock,5,0.0,3.5
+Atlantic,Maintenance materials,In_Stock,155,951268.11,86.1
+Atlantic,Maintenance materials,Low_Stock,21,23732.73,11.7
+Atlantic,Maintenance materials,Out_of_Stock,4,0.0,2.2
+Atlantic,Medicines,In_Stock,110,519886.92,91.7
+Atlantic,Medicines,Low_Stock,8,6005.4,6.7
+Atlantic,Medicines,Out_of_Stock,2,0.0,1.7
+Atlantic,Seed stock,In_Stock,72,5408595.14,82.8
+Atlantic,Seed stock,Low_Stock,12,161095.91,13.8
+Atlantic,Seed stock,Out_of_Stock,3,0.0,3.4
+Atlantic,Water-quality testing supplies,In_Stock,148,154793.36,82.2
+Atlantic,Water-quality testing supplies,Low_Stock,24,6383.6,13.3
+Atlantic,Water-quality testing supplies,Out_of_Stock,8,0.0,4.4
+Indian,Equipment,In_Stock,184,3341186.33,87.6
+Indian,Equipment,Low_Stock,24,74289.6,11.4
+Indian,Equipment,Out_of_Stock,2,0.0,1.0
+Indian,Feed,In_Stock,131,3255310.13,84.0
+Indian,Feed,Low_Stock,22,102210.02,14.1
+Indian,Feed,Out_of_Stock,3,0.0,1.9
+Indian,Maintenance materials,In_Stock,179,1117748.75,85.2
+Indian,Maintenance materials,Low_Stock,27,43759.04,12.9
+Indian,Maintenance materials,Out_of_Stock,4,0.0,1.9
+Indian,Medicines,In_Stock,121,538820.26,86.4
+Indian,Medicines,Low_Stock,17,15412.75,12.1
+Indian,Medicines,Out_of_Stock,2,0.0,1.4
+Indian,Seed stock,In_Stock,87,7782010.44,86.1
+Indian,Seed stock,Low_Stock,13,204556.57,12.9
+Indian,Seed stock,Out_of_Stock,1,0.0,1.0
+Indian,Water-quality testing supplies,In_Stock,172,201964.81,81.9
+Indian,Water-quality testing supplies,Low_Stock,30,6305.2,14.3
+Indian,Water-quality testing supplies,Out_of_Stock,8,0.0,3.8
+Pacific,Equipment,In_Stock,230,3806168.15,82.4
+Pacific,Equipment,Low_Stock,37,113139.18,13.3
+Pacific,Equipment,Out_of_Stock,12,0.0,4.3
+Pacific,Feed,In_Stock,147,3306850.03,83.1
+Pacific,Feed,Low_Stock,29,133032.67,16.4
+Pacific,Feed,Out_of_Stock,1,0.0,0.6
+Pacific,Maintenance materials,In_Stock,233,1391968.5,83.5
+Pacific,Maintenance materials,Low_Stock,37,34149.21,13.3
+Pacific,Maintenance materials,Out_of_Stock,9,0.0,3.2
+Pacific,Medicines,In_Stock,154,699895.56,82.8
+Pacific,Medicines,Low_Stock,26,23608.52,14.0
+Pacific,Medicines,Out_of_Stock,6,0.0,3.2
+Pacific,Seed stock,In_Stock,111,7540905.5,87.4
+Pacific,Seed stock,Low_Stock,15,216579.31,11.8
+Pacific,Seed stock,Out_of_Stock,1,0.0,0.8
+Pacific,Water-quality testing supplies,In_Stock,248,270611.27,88.9
+Pacific,Water-quality testing supplies,Low_Stock,25,4402.84,9.0
+Pacific,Water-quality testing supplies,Out_of_Stock,6,0.0,2.2

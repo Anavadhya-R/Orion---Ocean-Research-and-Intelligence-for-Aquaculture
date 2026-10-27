@@ -1,0 +1,101 @@
+resource_id,site_id,resource_name,resource_category,quantity_available,unit,reorder_threshold,unit_cost_usd,supplier_name,last_restock_date,resource_status
+R000001,S0002,Starter feed pellets,Feed,885.2,kg,236.6,1.83,Coral Farm Provisions (simulated),2024-08-27,In_Stock
+R000002,S0002,Grower feed pellets,Feed,33854.1,kg,8217.4,1.21,Delta Ocean Equipment (simulated),2024-10-02,In_Stock
+R000003,S0002,Finisher feed pellets,Feed,8022.5,kg,4961.8,1.48,Nordic Lab Supplies (simulated),2024-07-14,In_Stock
+R000004,S0002,Seed stock - Nile tilapia,Seed stock,279.0,thousand_individuals,73.0,631.55,Equator Farm Provisions (simulated),2024-08-19,In_Stock
+R000005,S0002,Feeding system spare parts,Equipment,37.0,set,10.0,371.09,Coral Lab Supplies (simulated),2024-08-22,In_Stock
+R000006,S0002,Net pen or cage nets,Equipment,0.0,unit,2.0,2494.02,Pacific Marine Feeds (simulated),2024-11-08,Out_of_Stock
+R000007,S0002,Aerators,Equipment,5.0,unit,5.0,1059.01,Coral Marine Feeds (simulated),2024-08-05,Low_Stock
+R000008,S0002,Salinity refractometer fluid,Water-quality testing supplies,9.0,bottle,5.0,15.1,Equator Farm Provisions (simulated),2024-09-24,In_Stock
+R000009,S0002,pH calibration buffer solution,Water-quality testing supplies,33.0,bottle,9.0,24.29,Blue Hatchery Co (simulated),2024-09-17,In_Stock
+R000010,S0002,Nitrate test strips,Water-quality testing supplies,47.0,box,18.0,17.04,Blue Hatchery Co (simulated),2024-12-12,In_Stock
+R000011,S0002,Probiotic additive,Medicines,118.1,kg,47.5,26.07,Coral Aqua Supplies (simulated),2024-11-27,In_Stock
+R000012,S0002,Disinfectant,Medicines,428.4,litre,97.4,6.17,Coral Marine Feeds (simulated),2024-09-06,In_Stock
+R000013,S0002,Replacement netting,Maintenance materials,429.8,m2,125.6,8.59,Reef Lab Supplies (simulated),2024-12-17,In_Stock
+R000014,S0002,Mooring rope,Maintenance materials,2109.7,metre,738.5,3.61,Pacific Lab Supplies (simulated),2024-07-26,In_Stock
+R000015,S0002,Diesel fuel,Maintenance materials,5651.2,litre,1325.4,1.38,Kelp Marine Feeds (simulated),2024-07-07,In_Stock
+R000016,S0005,Starter feed pellets,Feed,6923.0,kg,1770.7,1.87,Kelp Hatchery Co (simulated),2024-09-24,In_Stock
+R000017,S0005,Grower feed pellets,Feed,4270.5,kg,10868.5,1.68,Kelp Hatchery Co (simulated),2024-08-27,Low_Stock
+R000018,S0005,Finisher feed pellets,Feed,22114.8,kg,7304.5,1.33,Blue Lab Supplies (simulated),2024-07-22,In_Stock
+R000019,S0005,Seed stock - Spotted seatrout,Seed stock,223.0,thousand_individuals,93.0,855.7,Nordic Farm Provisions (simulated),2024-09-21,In_Stock
+R000020,S0005,Seed stock - Red drum,Seed stock,570.0,thousand_individuals,130.0,362.04,Delta Aqua Supplies (simulated),2024-07-21,In_Stock
+R000021,S0005,Harvest crates,Equipment,1107.0,unit,702.0,14.39,Blue Hatchery Co (simulated),2024-11-04,In_Stock
+R000022,S0005,Aerators,Equipment,8.0,unit,6.0,795.82,Coral Aqua Supplies (simulated),2024-12-26,In_Stock
+R000023,S0005,Net pen or cage nets,Equipment,2.0,unit,5.0,2740.63,Coral Hatchery Co (simulated),2024-11-25,Low_Stock
+R000024,S0005,Dissolved oxygen probe membranes,Water-quality testing supplies,36.0,pack,16.0,29.67,Equator Ocean Equipment (simulated),2024-12-04,In_Stock
+R000025,S0005,Ammonia test kits,Water-quality testing supplies,65.0,kit,28.0,25.2,Blue Hatchery Co (simulated),2024-11-16,In_Stock
+R000026,S0005,Salinity refractometer fluid,Water-quality testing supplies,28.0,bottle,7.0,8.54,Pacific Hatchery Co (simulated),2024-09-24,In_Stock
+R000027,S0005,Probiotic additive,Medicines,73.6,kg,38.2,24.71,Coral Farm Provisions (simulated),2024-11-16,In_Stock
+R000028,S0005,Disinfectant,Medicines,547.8,litre,163.9,6.26,Nordic Lab Supplies (simulated),2024-11-07,In_Stock
+R000029,S0005,Mooring rope,Maintenance materials,295.8,metre,70.2,6.07,Pacific Farm Provisions (simulated),2024-07-20,In_Stock
+R000030,S0005,Diesel fuel,Maintenance materials,5659.9,litre,1824.3,1.09,Nordic Marine Feeds (simulated),2024-11-01,In_Stock
+R000031,S0005,Replacement netting,Maintenance materials,1523.0,m2,392.0,5.75,Coral Marine Feeds (simulated),2024-12-19,In_Stock
+R000032,S0010,Starter feed pellets,Feed,4900.8,kg,1457.0,1.43,Coral Lab Supplies (simulated),2024-10-30,In_Stock
+R000033,S0010,Grower feed pellets,Feed,14938.5,kg,3886.6,1.61,Reef Lab Supplies (simulated),2024-08-27,In_Stock
+R000034,S0010,Finisher feed pellets,Feed,11330.3,kg,12928.9,1.46,Kelp Ocean Equipment (simulated),2024-10-05,Low_Stock
+R000035,S0010,Seed stock - Spotted seatrout,Seed stock,209.0,thousand_individuals,67.0,350.76,Tidal Ocean Equipment (simulated),2024-11-03,In_Stock
+R000036,S0010,Aerators,Equipment,5.0,unit,3.0,739.64,Delta Hatchery Co (simulated),2024-12-23,In_Stock
+R000037,S0010,Harvest crates,Equipment,576.0,unit,151.0,12.16,Equator Marine Feeds (simulated),2024-07-13,In_Stock
+R000038,S0010,Buoys and float sets,Equipment,78.0,set,29.0,199.67,Tidal Ocean Equipment (simulated),2024-09-01,In_Stock
+R000039,S0010,Ammonia test kits,Water-quality testing supplies,24.0,kit,6.0,52.23,Blue Farm Provisions (simulated),2024-11-21,In_Stock
+R000040,S0010,pH calibration buffer solution,Water-quality testing supplies,27.0,bottle,11.0,23.53,Reef Lab Supplies (simulated),2024-08-20,In_Stock
+R000041,S0010,Nitrate test strips,Water-quality testing supplies,31.0,box,12.0,30.05,Coral Ocean Equipment (simulated),2024-07-29,In_Stock
+R000042,S0010,Vaccine (generic),Medicines,16.0,dose_1000,11.0,187.64,Blue Aqua Supplies (simulated),2024-11-21,In_Stock
+R000043,S0010,Probiotic additive,Medicines,34.5,kg,10.6,10.29,Nordic Farm Provisions (simulated),2024-07-09,In_Stock
+R000044,S0010,Diesel fuel,Maintenance materials,3353.6,litre,1888.6,1.35,Equator Lab Supplies (simulated),2024-10-02,In_Stock
+R000045,S0010,Anti-fouling paint,Maintenance materials,65.9,litre,25.8,22.73,Harbor Hatchery Co (simulated),2024-08-07,In_Stock
+R000046,S0010,Lubricants and spare parts,Maintenance materials,4.0,set,9.0,141.54,Delta Marine Feeds (simulated),2024-08-13,Low_Stock
+R000047,S0011,Starter feed pellets,Feed,639.5,kg,2417.7,1.79,Equator Farm Provisions (simulated),2024-09-13,Low_Stock
+R000048,S0011,Grower feed pellets,Feed,30725.8,kg,8836.8,1.05,Nordic Hatchery Co (simulated),2024-07-10,In_Stock
+R000049,S0011,Finisher feed pellets,Feed,14026.1,kg,6760.4,1.58,Harbor Aqua Supplies (simulated),2024-11-28,In_Stock
+R000050,S0011,Seed stock - Spotted seatrout,Seed stock,194.0,thousand_individuals,114.0,706.39,Kelp Ocean Equipment (simulated),2024-10-24,In_Stock
+R000051,S0011,Buoys and float sets,Equipment,57.0,set,30.0,174.31,Tidal Ocean Equipment (simulated),2024-11-29,In_Stock
+R000052,S0011,Net pen or cage nets,Equipment,2.0,unit,7.0,1627.31,Harbor Lab Supplies (simulated),2024-08-15,Low_Stock
+R000053,S0011,Feeding system spare parts,Equipment,11.0,set,6.0,217.86,Pacific Marine Feeds (simulated),2024-12-28,In_Stock
+R000054,S0011,Salinity refractometer fluid,Water-quality testing supplies,10.0,bottle,6.0,16.61,Coral Marine Feeds (simulated),2024-10-11,In_Stock
+R000055,S0011,pH calibration buffer solution,Water-quality testing supplies,19.0,bottle,8.0,12.48,Harbor Hatchery Co (simulated),2024-12-03,In_Stock
+R000056,S0011,Dissolved oxygen probe membranes,Water-quality testing supplies,12.0,pack,5.0,56.63,Equator Farm Provisions (simulated),2024-09-19,In_Stock
+R000057,S0011,Vaccine (generic),Medicines,26.0,dose_1000,8.0,65.62,Reef Marine Feeds (simulated),2024-07-24,In_Stock
+R000058,S0011,Disinfectant,Medicines,35.6,litre,91.2,14.68,Equator Lab Supplies (simulated),2024-12-01,Low_Stock
+R000059,S0011,Mooring rope,Maintenance materials,519.8,metre,170.7,3.95,Equator Ocean Equipment (simulated),2024-12-24,In_Stock
+R000060,S0011,Lubricants and spare parts,Maintenance materials,37.0,set,22.0,37.12,Harbor Marine Feeds (simulated),2024-11-15,In_Stock
+R000061,S0011,Anti-fouling paint,Maintenance materials,333.4,litre,75.4,29.9,Harbor Ocean Equipment (simulated),2024-08-16,In_Stock
+R000062,S0013,Starter feed pellets,Feed,1439.5,kg,601.7,1.95,Tidal Farm Provisions (simulated),2024-10-15,In_Stock
+R000063,S0013,Grower feed pellets,Feed,2717.1,kg,9721.9,1.21,Harbor Ocean Equipment (simulated),2024-08-12,Low_Stock
+R000064,S0013,Finisher feed pellets,Feed,12488.0,kg,8487.0,1.2,Coral Ocean Equipment (simulated),2024-07-13,In_Stock
+R000065,S0013,Seed stock - Mozambique tilapia,Seed stock,220.0,thousand_individuals,75.0,545.07,Reef Hatchery Co (simulated),2024-09-18,In_Stock
+R000066,S0013,Seed stock - Ocellaris clownfish,Seed stock,131.0,thousand_individuals,96.0,502.84,Kelp Farm Provisions (simulated),2024-09-05,In_Stock
+R000067,S0013,Aerators,Equipment,0.0,unit,8.0,429.05,Pacific Lab Supplies (simulated),2024-11-11,Out_of_Stock
+R000068,S0013,Water pumps,Equipment,19.0,unit,4.0,2086.03,Tidal Lab Supplies (simulated),2024-11-14,In_Stock
+R000069,S0013,Harvest crates,Equipment,437.0,unit,320.0,13.01,Pacific Marine Feeds (simulated),2024-07-20,In_Stock
+R000070,S0013,pH calibration buffer solution,Water-quality testing supplies,8.0,bottle,6.0,21.75,Equator Lab Supplies (simulated),2024-10-16,In_Stock
+R000071,S0013,Salinity refractometer fluid,Water-quality testing supplies,6.0,bottle,5.0,11.14,Reef Ocean Equipment (simulated),2024-09-21,In_Stock
+R000072,S0013,Dissolved oxygen probe membranes,Water-quality testing supplies,4.0,pack,3.0,27.82,Nordic Farm Provisions (simulated),2024-08-10,In_Stock
+R000073,S0013,Antiparasitic treatment (generic),Medicines,198.5,litre,72.5,34.03,Tidal Ocean Equipment (simulated),2024-08-07,In_Stock
+R000074,S0013,Probiotic additive,Medicines,262.5,kg,75.2,27.14,Delta Lab Supplies (simulated),2024-11-13,In_Stock
+R000075,S0013,Diesel fuel,Maintenance materials,5860.3,litre,2153.2,1.2,Reef Aqua Supplies (simulated),2024-11-01,In_Stock
+R000076,S0013,Mooring rope,Maintenance materials,674.2,metre,175.8,5.38,Delta Ocean Equipment (simulated),2024-12-09,In_Stock
+R000077,S0013,Replacement netting,Maintenance materials,3183.6,m2,725.6,6.66,Harbor Lab Supplies (simulated),2024-09-03,In_Stock
+R000078,S0015,Starter feed pellets,Feed,579.9,kg,587.3,1.61,Equator Hatchery Co (simulated),2024-08-17,Low_Stock
+R000079,S0015,Grower feed pellets,Feed,27638.9,kg,12055.0,1.62,Harbor Ocean Equipment (simulated),2024-07-17,In_Stock
+R000080,S0015,Finisher feed pellets,Feed,47842.4,kg,12457.1,1.44,Equator Marine Feeds (simulated),2024-07-22,In_Stock
+R000081,S0015,Seed stock - Spotted seatrout,Seed stock,108.0,thousand_individuals,103.0,481.48,Nordic Lab Supplies (simulated),2024-10-26,In_Stock
+R000082,S0015,Water pumps,Equipment,0.0,unit,8.0,1741.83,Harbor Aqua Supplies (simulated),2024-09-26,Out_of_Stock
+R000083,S0015,Net pen or cage nets,Equipment,41.0,unit,9.0,2961.59,Nordic Lab Supplies (simulated),2024-07-19,In_Stock
+R000084,S0015,Feeding system spare parts,Equipment,5.0,set,2.0,518.09,Reef Lab Supplies (simulated),2024-12-07,In_Stock
+R000085,S0015,Nitrate test strips,Water-quality testing supplies,15.0,box,4.0,21.02,Reef Farm Provisions (simulated),2024-07-20,In_Stock
+R000086,S0015,pH calibration buffer solution,Water-quality testing supplies,42.0,bottle,23.0,23.38,Equator Marine Feeds (simulated),2024-10-31,In_Stock
+R000087,S0015,Dissolved oxygen probe membranes,Water-quality testing supplies,60.0,pack,16.0,28.01,Harbor Ocean Equipment (simulated),2024-10-19,In_Stock
+R000088,S0015,Disinfectant,Medicines,615.2,litre,215.0,11.97,Harbor Hatchery Co (simulated),2024-11-12,In_Stock
+R000089,S0015,Antiparasitic treatment (generic),Medicines,278.2,litre,76.1,76.68,Nordic Lab Supplies (simulated),2024-12-06,In_Stock
+R000090,S0015,Mooring rope,Maintenance materials,3287.2,metre,746.5,8.16,Nordic Ocean Equipment (simulated),2024-10-14,In_Stock
+R000091,S0015,Lubricants and spare parts,Maintenance materials,91.0,set,26.0,143.33,Tidal Marine Feeds (simulated),2024-09-07,In_Stock
+R000092,S0015,Replacement netting,Maintenance materials,249.7,m2,369.6,13.5,Reef Farm Provisions (simulated),2024-10-08,Low_Stock
+R000093,S0017,Seed stock - Japanese kelp,Seed stock,90.7,kg,64.7,7.84,Delta Farm Provisions (simulated),2024-08-10,In_Stock
+R000094,S0017,Seed stock - Wakame,Seed stock,199.0,kg,139.3,6.49,Nordic Aqua Supplies (simulated),2024-07-28,In_Stock
+R000095,S0017,Feeding system spare parts,Equipment,13.0,set,4.0,520.43,Equator Farm Provisions (simulated),2024-12-16,In_Stock
+R000096,S0017,Water pumps,Equipment,10.0,unit,7.0,510.05,Delta Aqua Supplies (simulated),2024-09-03,In_Stock
+R000097,S0017,Harvest crates,Equipment,1513.0,unit,497.0,22.17,Coral Marine Feeds (simulated),2024-07-07,In_Stock
+R000098,S0017,Salinity refractometer fluid,Water-quality testing supplies,34.0,bottle,8.0,10.68,Pacific Farm Provisions (simulated),2024-11-07,In_Stock
+R000099,S0017,Nitrate test strips,Water-quality testing supplies,41.0,box,19.0,13.07,Delta Hatchery Co (simulated),2024-11-11,In_Stock
+R000100,S0017,Dissolved oxygen probe membranes,Water-quality testing supplies,31.0,pack,24.0,38.47,Delta Ocean Equipment (simulated),2024-09-24,In_Stock

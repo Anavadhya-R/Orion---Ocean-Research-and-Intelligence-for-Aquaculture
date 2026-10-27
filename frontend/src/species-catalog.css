@@ -59,3 +59,35 @@
 .species-catalog-page .catalog-reference-card > b { color:#83A5A3; }
 @media(max-width:850px) { .species-catalog-page .catalog-layout { grid-template-columns:1fr; } .species-catalog-page .catalog-habitat-list { grid-template-columns:repeat(2,minmax(0,1fr)); } .species-catalog-page .catalog-reference-row { grid-template-columns:1fr 1fr; } .species-catalog-page .catalog-reference-intro { grid-column:1/-1; } }
 @media(max-width:560px) { .species-catalog-page .catalog-toolbar,.species-catalog-page .catalog-search-strip { align-items:stretch; flex-direction:column; } .species-catalog-page .catalog-reference-row { grid-template-columns:1fr; } .species-catalog-page .catalog-reference-intro { grid-column:auto; } .species-catalog-page .catalog-results { padding:15px; } .species-catalog-page .catalog-source-status { white-space:normal; } }
+
+.species-photo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.species-card-photo {
+  width: 100%;
+}
+
+.species-card-photo .species-image-wrapper {
+  margin-bottom: 0;
+}
+
+.species-card-information {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.species-card-information small {
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+
+.species-photo-card .reference-icon {
+  align-self: flex-start;
+}

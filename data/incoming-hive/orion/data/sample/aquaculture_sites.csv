@@ -1,0 +1,101 @@
+site_id,site_name,latitude,longitude,country_or_region,ocean_basin,site_type,farm_area_hectares,water_depth_m,average_temperature_c,average_salinity_psu,average_dissolved_oxygen_mg_l,water_quality_index,infrastructure_access_score,environmental_risk_score,estimated_production_capacity_tonnes_year,site_status,is_synthetic
+S0001,SIM Canadian Maritimes Site 001,49.9173,-65.8956,Canada,Atlantic,marine_cage,4.39,20.1,8.73,34.42,8.99,95.4,83.0,30.2,1651.3,Operational,true
+S0002,SIM Japan Site 001,34.6066,138.4745,Japan,Pacific,earthen_pond,9.45,2.8,18.93,9.41,8.28,62.0,87.3,35.1,142.2,Operational,true
+S0003,SIM Korea and Yellow Sea Site 001,39.9251,128.4997,South Korea/China,Pacific,onshore_raceway,4.36,1.3,15.69,31.95,8.06,98.2,89.5,26.3,775.0,Fallow,true
+S0004,SIM New Zealand Site 001,-45.7715,170.8517,New Zealand,Pacific,land_based_ras,0.46,2.2,13.0,33.14,8.58,92.9,95.1,38.8,283.6,Operational,true
+S0005,SIM Korea and Yellow Sea Site 002,39.332,127.8524,South Korea/China,Pacific,earthen_pond,50.34,2.0,16.46,31.92,7.5,100.0,93.2,17.6,736.8,Operational,true
+S0006,SIM Andaman and Malacca Site 001,5.7147,99.949,Thailand/Malaysia/Indonesia,Indian,marine_cage,15.35,56.2,28.78,33.75,6.0,78.7,49.0,13.1,3044.2,Planned,true
+S0007,SIM Arabian Sea Coast Site 001,25.1291,56.4763,Oman/Pakistan/India,Indian,onshore_raceway,2.36,2.7,23.67,37.43,6.04,85.6,27.1,10.5,292.5,Under_Construction,true
+S0008,SIM Norwegian Coast Site 001,63.7028,10.9047,Norway,Atlantic,longline_raft,25.2,9.8,7.9,34.0,9.62,96.9,94.7,25.1,769.7,Under_Construction,true
+S0009,SIM Patagonian Fjords Chile Site 001,-45.7005,-75.1076,Chile,Pacific,longline_raft,92.67,9.5,11.52,33.53,8.53,98.1,78.5,31.0,2981.8,Operational,true
+S0010,SIM Patagonian Fjords Chile Site 002,-42.5708,-73.1138,Chile,Pacific,marine_cage,7.97,43.1,12.78,33.4,7.69,96.9,78.5,30.6,2897.8,Operational,true
+S0011,SIM Patagonian Fjords Chile Site 003,-41.86,-73.101,Chile,Pacific,land_based_ras,1.39,1.8,12.9,33.5,7.76,97.2,68.1,28.1,1443.4,Operational,true
+S0012,SIM Southeast Asia Site 001,18.9661,121.4603,Vietnam/Philippines/Indonesia/Thailand,Pacific,marine_cage,2.87,40.2,25.5,34.35,6.48,92.2,43.3,8.3,563.0,Under_Construction,true
+S0013,SIM Bay of Bengal Coast Site 001,20.3573,92.306,India/Bangladesh/Myanmar,Indian,marine_cage,4.21,21.9,25.78,32.59,6.75,94.7,42.4,9.8,1482.7,Operational,true
+S0014,SIM Andaman and Malacca Site 002,6.0385,99.309,Thailand/Malaysia/Indonesia,Indian,earthen_pond,18.78,1.2,28.39,33.15,5.93,78.3,54.7,12.1,289.7,Operational,true
+S0015,SIM Caribbean Sea Site 001,18.2298,-67.2032,Caribbean (multiple countries),Atlantic,marine_cage,9.57,25.0,25.91,35.89,6.41,88.2,49.8,9.7,2319.9,Operational,true
+S0016,SIM South Australia Site 001,-34.6124,136.3788,Australia,Indian,marine_cage,11.03,20.0,17.04,35.39,7.42,100.0,79.7,16.1,2236.1,Under_Construction,true
+S0017,SIM Japan Site 002,42.3531,141.2282,Japan,Pacific,longline_raft,11.64,10.8,14.63,33.33,7.58,98.8,82.6,22.2,368.8,Operational,true
+S0018,SIM South African East Coast Site 001,-30.3833,30.8102,South Africa,Indian,marine_cage,1.45,45.6,21.49,35.4,6.87,98.0,60.8,14.0,479.7,Operational,true
+S0019,SIM Andaman and Malacca Site 003,5.742,95.7844,Thailand/Malaysia/Indonesia,Indian,earthen_pond,8.92,1.9,28.78,33.38,5.98,78.1,68.4,12.9,100.7,Operational,true
+S0020,SIM Bay of Biscay and Iberia Site 001,36.7174,-6.589,Spain/Portugal/France,Atlantic,marine_cage,2.3,28.2,17.61,35.73,6.94,95.8,97.0,22.5,783.7,Operational,true
+S0021,SIM China Coast Site 001,23.6932,117.7062,China,Pacific,longline_raft,53.18,24.1,24.13,32.25,6.68,95.2,85.2,10.8,923.8,Operational,true
+S0022,SIM South Australia Site 002,-35.4352,137.3206,Australia,Indian,earthen_pond,44.29,2.3,17.45,35.0,7.44,100.0,76.0,19.9,429.8,Under_Construction,true
+S0023,SIM North Sea and Scotland Site 001,54.1839,-4.9281,United Kingdom,Atlantic,earthen_pond,10.03,1.6,11.31,34.46,8.63,95.6,94.7,33.2,77.3,Operational,true
+S0024,SIM Bay of Bengal Coast Site 002,16.2789,82.0118,India/Bangladesh/Myanmar,Indian,marine_cage,3.16,44.7,26.34,32.81,5.94,82.7,61.3,10.3,811.3,Operational,true
+S0025,SIM Red Sea Site 001,15.7032,39.5699,Egypt/Saudi Arabia/Eritrea,Indian,marine_cage,5.51,16.6,29.5,39.16,5.73,77.4,52.5,19.0,1767.7,Suspended,true
+S0026,SIM Western Mediterranean Site 001,36.4437,10.8637,Mediterranean (Spain/France/Italy),Atlantic,land_based_ras,1.13,2.6,19.37,37.89,7.06,100.0,82.6,22.5,786.2,Planned,true
+S0027,SIM Southeast Asia Site 002,12.8782,122.5844,Vietnam/Philippines/Indonesia/Thailand,Pacific,marine_cage,7.12,17.6,26.27,33.9,6.08,84.0,41.3,7.8,1363.9,Operational,true
+S0028,SIM Norwegian Coast Site 002,62.268,5.5342,Norway,Atlantic,onshore_raceway,5.35,2.0,7.8,33.96,9.07,98.8,79.4,18.5,749.7,Operational,true
+S0029,SIM Mozambique Channel Site 001,-19.5177,49.1876,Mozambique/Madagascar,Indian,marine_cage,18.18,30.1,25.57,35.61,6.47,92.1,24.9,10.2,3665.9,Operational,true
+S0030,SIM Norwegian Coast Site 003,64.7657,10.2343,Norway,Atlantic,marine_cage,5.57,52.8,7.03,34.46,9.39,98.5,94.1,19.9,1859.4,Fallow,true
+S0031,SIM Southeast Asia Site 003,15.9788,119.7393,Vietnam/Philippines/Indonesia/Thailand,Pacific,onshore_raceway,3.06,2.9,25.7,33.73,6.32,83.9,58.3,7.8,361.1,Operational,true
+S0032,SIM West India Site 001,13.0595,74.4908,India,Indian,earthen_pond,14.41,2.8,26.92,11.27,6.85,86.3,59.9,9.9,164.2,Under_Construction,true
+S0033,SIM Southeast Asia Site 004,18.4603,122.2924,Vietnam/Philippines/Indonesia/Thailand,Pacific,longline_raft,76.43,23.1,25.03,33.88,6.63,88.4,50.9,9.9,1811.1,Operational,true
+S0034,SIM Western Australia Site 001,-27.7603,113.7472,Australia,Indian,marine_cage,1.06,33.8,23.12,35.53,6.54,93.1,82.5,11.3,249.4,Operational,true
+S0035,SIM Persian Gulf Site 001,27.3251,51.9273,Gulf States/Iran,Indian,longline_raft,45.61,16.1,27.73,39.52,5.79,81.8,57.6,14.4,846.0,Operational,true
+S0036,SIM New Zealand Site 002,-36.9916,174.379,New Zealand,Pacific,marine_cage,4.77,40.9,17.08,34.18,7.46,100.0,83.2,17.1,917.2,Operational,true
+S0037,SIM East Australia Site 001,-35.5241,150.8381,Australia,Pacific,earthen_pond,6.32,1.1,19.13,26.11,7.76,98.3,72.1,21.2,84.1,Fallow,true
+S0038,SIM Eastern Mediterranean and Aegean Site 001,38.9053,25.2293,Greece/Turkey/Egypt,Atlantic,earthen_pond,20.86,1.5,19.26,30.55,7.6,91.1,69.8,24.6,237.4,Operational,true
+S0039,SIM China Coast Site 002,22.9883,121.7518,China,Pacific,earthen_pond,53.98,3.0,24.1,31.78,6.31,89.6,68.2,10.1,642.2,Operational,true
+S0040,SIM French Polynesia Site 001,-17.6698,-149.2235,French Polynesia,Pacific,earthen_pond,11.15,1.6,25.88,5.43,8.34,79.6,41.6,23.8,167.9,Operational,true
+S0041,SIM China Coast Site 003,21.1643,111.1842,China,Pacific,longline_raft,68.07,20.4,25.27,31.93,6.52,92.4,81.6,7.3,1569.1,Fallow,true
+S0042,SIM Gulf of Mexico Site 001,25.1894,-96.9878,United States/Mexico,Atlantic,earthen_pond,13.15,1.7,23.4,36.44,6.39,90.8,78.3,12.3,175.3,Operational,true
+S0043,SIM Western Mediterranean Site 002,36.7854,11.1652,Mediterranean (Spain/France/Italy),Atlantic,earthen_pond,31.82,1.0,18.37,37.71,7.04,100.0,78.1,19.2,396.6,Fallow,true
+S0044,SIM Western Mediterranean Site 003,39.4965,2.1173,Mediterranean (Spain/France/Italy),Atlantic,earthen_pond,7.97,2.7,17.91,37.52,7.16,100.0,66.0,19.6,68.7,Operational,true
+S0045,SIM Hawaii Site 001,20.5424,-157.2785,United States (Hawaii),Pacific,onshore_raceway,0.65,1.9,25.26,34.99,6.3,89.5,84.0,8.0,99.1,Operational,true
+S0046,SIM Norwegian Coast Site 004,63.9186,9.9004,Norway,Atlantic,earthen_pond,7.17,2.7,7.71,30.87,9.35,94.0,98.2,24.3,95.6,Operational,true
+S0047,SIM China Coast Site 004,20.4634,109.6815,China,Pacific,onshore_raceway,0.96,2.8,25.11,32.08,6.88,98.2,81.5,10.8,131.9,Operational,true
+S0048,SIM Southeast Asia Site 005,12.5607,124.5185,Vietnam/Philippines/Indonesia/Thailand,Pacific,earthen_pond,13.92,2.0,27.11,6.94,8.12,89.4,60.4,13.8,203.3,Planned,true
+S0049,SIM China Coast Site 005,30.3529,122.1655,China,Pacific,marine_cage,16.87,19.8,21.0,32.24,6.99,99.8,61.9,11.9,4777.8,Operational,true
+S0050,SIM Persian Gulf Site 002,26.8348,52.8299,Gulf States/Iran,Indian,earthen_pond,6.11,1.3,27.68,39.56,5.85,82.7,79.8,14.8,49.3,Operational,true
+S0051,SIM Sumatra and Java South Coast Site 001,1.2245,98.7706,Indonesia,Indian,marine_cage,12.41,33.1,28.27,34.15,6.18,81.5,49.1,12.4,3653.9,Operational,true
+S0052,SIM Caribbean Sea Site 002,17.9953,-70.8515,Caribbean (multiple countries),Atlantic,marine_cage,1.8,52.2,25.68,35.78,6.05,84.4,44.4,9.4,652.2,Fallow,true
+S0053,SIM Norwegian Coast Site 005,65.5869,12.1593,Norway,Atlantic,earthen_pond,49.88,1.2,6.3,27.21,9.5,80.7,96.7,33.3,524.3,Operational,true
+S0054,SIM North Sea and Scotland Site 002,58.8352,-4.5219,United Kingdom,Atlantic,land_based_ras,0.78,2.7,9.04,34.28,9.3,97.3,85.8,22.4,765.7,Planned,true
+S0055,SIM Bay of Bengal Coast Site 003,21.202,87.7036,India/Bangladesh/Myanmar,Indian,earthen_pond,77.72,1.6,25.63,13.84,7.42,90.3,25.9,11.6,1172.0,Planned,true
+S0056,SIM Western Mediterranean Site 004,40.7007,7.8514,Mediterranean (Spain/France/Italy),Atlantic,land_based_ras,2.28,1.6,16.56,37.46,7.46,96.8,71.2,26.2,2095.2,Planned,true
+S0057,SIM West India Site 002,11.2708,75.6429,India,Indian,marine_cage,1.93,34.0,27.29,34.37,5.82,74.4,59.5,12.7,720.5,Operational,true
+S0058,SIM West India Site 003,19.8137,72.5745,India,Indian,onshore_raceway,1.02,2.8,24.62,34.85,6.2,88.0,53.3,11.5,181.5,Fallow,true
+S0059,SIM Gulf of Mexico Site 002,29.9965,-87.3262,United States/Mexico,Atlantic,marine_cage,1.96,25.9,21.28,22.3,7.65,94.6,74.3,17.9,718.3,Planned,true
+S0060,SIM China Coast Site 006,24.5647,120.2322,China,Pacific,marine_cage,1.37,27.6,23.2,32.58,6.51,92.6,74.5,14.1,533.4,Suspended,true
+S0061,SIM South Australia Site 003,-34.6161,138.2588,Australia,Indian,earthen_pond,4.11,2.0,17.84,30.92,7.46,100.0,94.1,14.0,49.5,Fallow,true
+S0062,SIM South Australia Site 004,-34.7607,136.0598,Australia,Indian,longline_raft,9.94,10.3,17.52,35.28,7.33,100.0,71.4,18.2,275.4,Operational,true
+S0063,SIM Pacific Northwest Site 001,35.3908,-121.2176,Canada/United States,Pacific,longline_raft,104.85,8.6,16.94,34.55,7.65,100.0,75.6,20.7,3241.8,Operational,true
+S0064,SIM Persian Gulf Site 003,26.1216,55.6427,Gulf States/Iran,Indian,earthen_pond,4.35,1.9,27.27,40.2,5.99,84.9,79.3,10.2,48.0,Operational,true
+S0065,SIM Patagonian Fjords Chile Site 004,-47.6223,-75.3004,Chile,Pacific,longline_raft,32.53,22.5,10.57,33.51,8.51,100.0,61.1,28.8,619.3,Operational,true
+S0066,SIM French Polynesia Site 002,-17.9304,-149.0163,French Polynesia,Pacific,longline_raft,34.82,18.1,25.75,34.85,6.59,93.0,58.7,8.8,586.9,Operational,true
+S0067,SIM Japan Site 003,41.923,142.4382,Japan,Pacific,marine_cage,7.08,42.9,15.39,33.7,7.71,98.6,91.6,26.6,1786.5,Operational,true
+S0068,SIM Japan Site 004,36.0547,135.8863,Japan,Pacific,onshore_raceway,1.91,1.1,18.75,34.13,7.05,100.0,81.3,21.6,214.9,Operational,true
+S0069,SIM Mozambique Channel Site 002,-21.8957,48.1895,Mozambique/Madagascar,Indian,longline_raft,45.87,10.8,24.64,35.84,6.06,85.9,25.4,12.2,1222.1,Operational,true
+S0070,SIM Bay of Bengal Coast Site 004,12.8594,80.5078,India/Bangladesh/Myanmar,Indian,marine_cage,1.33,52.5,27.45,32.17,6.01,78.2,52.2,7.7,406.1,Operational,true
+S0071,SIM Pacific Northwest Site 002,43.9405,-124.19,Canada/United States,Pacific,longline_raft,14.02,5.6,12.4,33.61,8.4,87.9,88.8,36.5,247.8,Operational,true
+S0072,SIM Canadian Maritimes Site 002,49.1013,-63.4667,Canada,Atlantic,earthen_pond,8.2,1.7,8.68,25.12,9.93,87.3,79.3,45.3,108.1,Under_Construction,true
+S0073,SIM Norwegian Coast Site 006,65.1211,11.2605,Norway,Atlantic,marine_cage,5.99,35.0,7.29,34.24,9.18,96.1,100.0,22.1,1205.0,Operational,true
+S0074,SIM Andaman and Malacca Site 004,4.3066,98.9119,Thailand/Malaysia/Indonesia,Indian,earthen_pond,2.93,1.0,29.01,18.03,6.93,93.9,33.4,14.2,27.5,Operational,true
+S0075,SIM East Australia Site 002,-19.811,147.9545,Australia,Pacific,land_based_ras,1.21,2.9,25.92,34.87,6.29,89.4,74.3,12.2,595.8,Fallow,true
+S0076,SIM Bay of Bengal Coast Site 005,16.2527,82.3417,India/Bangladesh/Myanmar,Indian,onshore_raceway,1.52,2.6,26.61,32.42,6.13,86.6,67.4,10.5,197.6,Planned,true
+S0077,SIM Bay of Biscay and Iberia Site 002,36.7292,-9.1112,Spain/Portugal/France,Atlantic,marine_cage,5.06,25.5,17.81,35.34,7.08,100.0,89.8,23.4,1006.1,Operational,true
+S0078,SIM Bay of Biscay and Iberia Site 003,43.6838,-1.7894,Spain/Portugal/France,Atlantic,marine_cage,1.89,16.6,14.65,34.3,8.18,96.9,68.5,25.7,633.9,Operational,true
+S0079,SIM Bay of Bengal Coast Site 006,20.3628,87.1693,India/Bangladesh/Myanmar,Indian,land_based_ras,1.22,1.4,24.71,33.02,6.49,92.4,29.2,13.2,1181.2,Suspended,true
+S0080,SIM Mozambique Channel Site 003,-24.7783,35.0926,Mozambique/Madagascar,Indian,marine_cage,2.47,28.4,22.88,36.25,6.87,98.0,28.8,8.8,561.6,Operational,true
+S0081,SIM Korea and Yellow Sea Site 003,36.2835,121.0129,South Korea/China,Pacific,marine_cage,1.51,47.4,17.8,32.52,7.42,100.0,97.5,16.9,525.7,Suspended,true
+S0082,SIM New Zealand Site 003,-46.2051,170.5335,New Zealand,Pacific,land_based_ras,1.6,2.3,12.5,33.38,8.39,94.5,80.7,29.2,1305.6,Planned,true
+S0083,SIM Bay of Biscay and Iberia Site 004,37.024,-8.2637,Spain/Portugal/France,Atlantic,marine_cage,3.66,32.7,17.92,35.52,7.15,100.0,86.1,13.3,667.6,Suspended,true
+S0084,SIM China Coast Site 007,23.9372,120.0768,China,Pacific,earthen_pond,37.35,1.3,24.37,25.56,6.85,97.8,67.3,10.2,483.5,Fallow,true
+S0085,SIM Norwegian Coast Site 007,58.9403,5.7614,Norway,Atlantic,longline_raft,58.43,22.0,9.27,34.46,8.75,100.0,70.3,27.5,1604.5,Operational,true
+S0086,SIM China Coast Site 008,20.2772,111.1736,China,Pacific,earthen_pond,3.0,1.4,25.35,28.27,6.79,96.9,66.7,8.8,37.6,Operational,true
+S0087,SIM Eastern Mediterranean and Aegean Site 002,36.5145,21.6959,Greece/Turkey/Egypt,Atlantic,longline_raft,7.19,11.9,20.47,38.38,6.87,98.0,58.9,23.1,232.4,Operational,true
+S0088,SIM Southeast Asia Site 006,8.0216,116.8276,Vietnam/Philippines/Indonesia/Thailand,Pacific,longline_raft,59.8,9.5,27.58,11.28,6.92,89.5,47.0,11.3,1489.2,Operational,true
+S0089,SIM Japan Site 005,34.1713,130.2713,Japan,Pacific,marine_cage,2.15,17.9,18.95,34.58,7.45,100.0,88.2,15.4,605.4,Operational,true
+S0090,SIM Southeast Asia Site 007,11.8491,123.2906,Vietnam/Philippines/Indonesia/Thailand,Pacific,land_based_ras,0.35,2.2,27.31,33.36,6.17,84.2,37.2,7.8,339.1,Operational,true
+S0091,SIM Brazilian Coast Site 001,-23.6566,-45.2716,Brazil,Atlantic,marine_cage,1.11,34.3,24.44,35.84,6.25,88.8,48.1,10.5,289.0,Fallow,true
+S0092,SIM China Coast Site 009,19.5907,108.5732,China,Pacific,marine_cage,6.73,37.8,25.29,31.9,6.72,90.5,84.5,11.3,2580.7,Operational,true
+S0093,SIM Southeast Asia Site 008,1.5839,120.7246,Vietnam/Philippines/Indonesia/Thailand,Pacific,land_based_ras,2.08,1.4,28.89,33.08,6.08,84.0,57.0,13.0,1486.8,Under_Construction,true
+S0094,SIM US East Coast Site 001,39.191,-74.1108,United States,Atlantic,earthen_pond,30.54,1.2,17.34,28.9,7.86,95.5,87.4,28.6,227.9,Operational,true
+S0095,SIM Persian Gulf Site 004,26.2527,51.0888,Gulf States/Iran,Indian,marine_cage,0.59,58.0,27.15,39.84,5.77,81.5,47.0,12.0,197.7,Operational,true
+S0096,SIM Southeast Asia Site 009,10.5982,120.1739,Vietnam/Philippines/Indonesia/Thailand,Pacific,land_based_ras,0.27,2.6,27.12,33.25,6.02,85.3,46.0,9.1,268.8,Operational,true
+S0097,SIM Northern Norway Coast Site 001,71.0253,24.5671,Norway,Arctic,earthen_pond,11.07,2.1,6.33,32.35,8.85,98.8,87.2,14.4,113.3,Operational,true
+S0098,SIM Southeast Asia Site 010,5.7314,120.8184,Vietnam/Philippines/Indonesia/Thailand,Pacific,onshore_raceway,2.27,2.6,28.21,33.17,5.78,74.3,61.0,11.8,222.5,Operational,true
+S0099,SIM Patagonian Fjords Chile Site 005,-54.6596,-72.3956,Chile,Pacific,longline_raft,40.58,23.5,6.34,29.41,10.38,91.2,74.9,37.4,1214.1,Operational,true
+S0100,SIM Eastern Mediterranean and Aegean Site 003,40.1887,23.52,Greece/Turkey/Egypt,Atlantic,earthen_pond,10.65,2.2,17.45,38.1,7.37,100.0,51.8,27.9,92.6,Operational,true

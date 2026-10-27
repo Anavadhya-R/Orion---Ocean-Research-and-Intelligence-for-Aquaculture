@@ -1,0 +1,13 @@
+stage,file,rows,columns,null_cells,rows_with_nulls,duplicate_rows,synthetic_status
+raw,ocean_conditions_raw.csv,21996,16,4260,3954,0,all is_synthetic=true
+processed,marine_species.csv,130,18,130,130,0,data_origin labelled simulated/approximate
+processed,species_occurrences.csv,15814,13,0,0,0,all is_synthetic=true
+processed,ocean_conditions.csv,21996,16,4260,3954,0,all is_synthetic=true
+processed,aquaculture_sites.csv,1000,18,0,0,0,all is_synthetic=true
+processed,habitat_suitability.csv,10600,18,0,0,0,all is_synthetic=true
+processed,species_environment_compatibility.csv,10500,10,0,0,0,n/a
+processed,fish_production.csv,7279,13,0,0,0,data_origin labelled simulated/approximate
+processed,resource_inventory.csv,3354,11,0,0,0,n/a
+processed,finance_transactions.csv,56270,10,0,0,0,all is_simulated=true
+processed,dashboard_kpis.csv,5699,14,0,0,0,data_origin labelled simulated/approximate
+processed,ocean_conditions_cleaned.csv,21996,16,0,0,0,all is_synthetic=true

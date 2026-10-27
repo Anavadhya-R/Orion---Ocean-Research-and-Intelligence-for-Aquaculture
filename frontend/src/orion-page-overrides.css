@@ -127,3 +127,649 @@
 .finance-future-panel p { margin:0; font-size:10px; }
 @media (max-width:850px) { .habitat-analysis-layout,.finance-planner-layout { grid-template-columns:1fr; } }
 @media (max-width:650px) { .habitat-page-heading,.resource-page-heading,.finance-page-heading { align-items:flex-start; flex-direction:column; } .habitat-metrics-grid,.resource-summary-row,.resource-guidance-grid { grid-template-columns:1fr; } .habitat-data-strip { align-items:flex-start; flex-wrap:wrap; } .habitat-data-strip .data-status { margin-left:58px; } .finance-fields { grid-template-columns:1fr; } .resource-table-footer { flex-direction:column; } .resource-heading-mark { width:52px;height:52px;font-size:28px; } }
+
+/* =========================================
+   ORION RESOURCE MANAGER — FORM STYLING
+   ========================================= */
+
+.resource-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.resource-page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.resource-page-heading p,
+.resource-table-heading p {
+  color: #7890a0;
+  line-height: 1.7;
+}
+
+.resource-inventory-panel {
+  min-width: 0;
+  overflow: hidden;
+  background: #fffefa;
+  border: 1px solid #e8e7df;
+  border-radius: 20px;
+}
+
+.resource-table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 26px 28px 20px;
+}
+
+.resource-table-heading h3 {
+  margin: 8px 0;
+  color: #173f59;
+  font-size: 21px;
+}
+
+.resource-add-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 8px 28px 28px;
+  align-items: end;
+}
+
+.resource-add-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  color: #35566b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.resource-add-form input,
+.resource-add-form select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  padding: 11px 13px;
+  border: 1px solid #d9e1df;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #24465c;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.resource-add-form input::placeholder {
+  color: #9aaab2;
+}
+
+.resource-add-form input:focus,
+.resource-add-form select:focus {
+  border-color: #6baea6;
+  box-shadow: 0 0 0 3px rgba(107, 174, 166, 0.16);
+}
+
+.resource-add-form button,
+.resource-add-button {
+  min-height: 46px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #24485e;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.resource-add-form button:hover,
+.resource-add-button:hover {
+  background: #32657a;
+  transform: translateY(-1px);
+}
+
+.inventory-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.inventory-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.inventory-table thead {
+  background: #f0f2eb;
+}
+
+.inventory-table th {
+  padding: 16px 20px;
+  color: #607b89;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+}
+
+.inventory-table td {
+  padding: 17px 20px;
+  border-bottom: 1px solid #eeeee7;
+  color: #456174;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.inventory-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.inventory-table td strong {
+  color: #24485e;
+}
+
+.inventory-table td small {
+  display: block;
+  margin-top: 5px;
+  color: #8295a0;
+}
+
+.inventory-table td button {
+  padding: 7px 11px;
+  border: 1px solid #ead5d1;
+  border-radius: 8px;
+  background: #fff7f5;
+  color: #a84e43;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.inventory-table td button:hover {
+  background: #fbe8e4;
+}
+
+.inventory-table .table-empty {
+  padding: 48px 20px;
+  text-align: center;
+  color: #8295a0;
+  line-height: 2;
+}
+
+.table-empty-icon {
+  display: block;
+  margin-bottom: 10px;
+  color: #82b9b2;
+  font-size: 28px;
+}
+
+.table-empty strong {
+  color: #35566b;
+  font-size: 14px;
+}
+
+.resource-table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 17px 22px;
+  border-top: 1px solid #eeeee7;
+  color: #8798a0;
+  font-size: 11px;
+}
+
+.resource-table-footer i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: #d5b77e;
+}
+
+.resource-summary-card {
+  min-width: 0;
+}
+
+.resource-summary-card strong {
+  display: block;
+  margin: 6px 0;
+  color: #24485e;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.resource-summary-card small {
+  color: #8798a0;
+  font-size: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (min-width: 1100px) {
+  .resource-add-form {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .resource-table-heading {
+    padding: 22px 18px 16px;
+  }
+
+  .resource-add-form {
+    grid-template-columns: 1fr;
+    padding: 8px 18px 22px;
+    gap: 16px;
+  }
+
+  .resource-add-form button {
+    width: 100%;
+  }
+
+  .resource-table-footer {
+    padding: 15px 18px;
+  }
+}
+
+/* ===== ORION HABITAT INSIGHTS FIX ===== */
+
+.habitat-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.habitat-selector-panel,
+.habitat-check-panel {
+  padding-bottom: 28px;
+}
+
+/* Habitat selector buttons */
+.habitat-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0 28px 24px;
+}
+
+.habitat-option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 20px;
+  border: 1px solid #d9e5e1;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #35566b;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.habitat-option:hover,
+.habitat-option.active {
+  border-color: #75b4aa;
+  background: #e6f2ef;
+  color: #24485e;
+}
+
+/* Habitat overview */
+.habitat-overview {
+  margin: 0 28px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #f1f5ef;
+}
+
+.habitat-overview h3 {
+  margin: 10px 0 12px;
+  color: #24485e;
+  font-size: 24px;
+}
+
+.habitat-overview p {
+  margin: 0;
+  color: #718895;
+  line-height: 1.7;
+}
+
+.habitat-reference-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.habitat-reference-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 18px;
+  border: 1px solid #e0e8e0;
+  border-radius: 12px;
+  background: #fffefa;
+}
+
+.habitat-reference-grid span {
+  color: #7c929d;
+  font-size: 12px;
+}
+
+.habitat-reference-grid strong {
+  color: #24485e;
+  font-size: 20px;
+}
+
+/* Water-quality slider controls */
+.habitat-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 32px;
+  padding: 8px 28px 30px;
+}
+
+.habitat-controls label {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+  min-width: 0;
+  color: #547080;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.habitat-controls label strong {
+  color: #24485e;
+  font-size: 16px;
+}
+
+.habitat-controls input[type="range"] {
+  display: block;
+  width: 100%;
+  height: 24px;
+  margin: 0;
+  accent-color: #68a99f;
+  cursor: pointer;
+}
+
+/* Water-quality results */
+.habitat-results {
+  margin: 0 28px;
+  overflow: hidden;
+  border: 1px solid #e7eae3;
+  border-radius: 12px;
+}
+
+.habitat-result-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 17px 20px;
+  border-bottom: 1px solid #e7eae3;
+}
+
+.habitat-result-row:last-child {
+  border-bottom: none;
+}
+
+.habitat-result-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.habitat-result-row > div strong {
+  color: #31566b;
+  font-size: 14px;
+}
+
+.habitat-result-row > div span {
+  color: #7d929d;
+  font-size: 13px;
+}
+
+.habitat-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.habitat-status.good {
+  background: #e4f3e9;
+  color: #347750;
+}
+
+.habitat-status.warning {
+  background: #fff0df;
+  color: #9a6224;
+}
+
+.habitat-disclaimer {
+  margin: 22px 28px 0;
+  color: #8798a0;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+  .habitat-options {
+    padding: 0 18px 20px;
+  }
+
+  .habitat-overview {
+    margin: 0 18px;
+    padding: 18px;
+  }
+
+  .habitat-reference-grid,
+  .habitat-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .habitat-controls {
+    padding: 8px 18px 24px;
+  }
+
+  .habitat-results {
+    margin: 0 18px;
+  }
+
+  .habitat-result-row {
+    padding: 15px;
+  }
+
+  .habitat-disclaimer {
+    margin: 18px 18px 0;
+  }
+}
+
+/* ===== Orion Finance Plan History ===== */
+
+.finance-history-panel {
+  margin-top: 28px;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e3e9e7;
+  border-radius: 18px;
+  box-shadow: 0 6px 22px rgba(31, 65, 75, 0.05);
+}
+
+.finance-history-panel h3 {
+  margin: 6px 0 10px;
+  color: #214c61;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.finance-history-panel p {
+  margin: 10px 0 20px;
+  color: #718997;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.finance-history-panel > div {
+  margin-bottom: 16px;
+}
+
+.finance-history-panel input {
+  box-sizing: border-box;
+  width: min(100%, 340px);
+  min-width: 0;
+  padding: 12px 14px;
+  color: #24495b;
+  background: #fff;
+  border: 1px solid #d5e0e2;
+  border-radius: 9px;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.finance-history-panel input:focus {
+  border-color: #34768a;
+  box-shadow: 0 0 0 3px rgba(52, 118, 138, 0.12);
+}
+
+.finance-history-panel button {
+  padding: 12px 18px;
+  color: #fff;
+  background: #315b6c;
+  border: 1px solid #315b6c;
+  border-radius: 9px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.finance-history-panel button:hover {
+  background: #244858;
+  transform: translateY(-1px);
+}
+
+.finance-history-panel button:focus-visible {
+  outline: 3px solid rgba(52, 118, 138, 0.3);
+  outline-offset: 3px;
+}
+
+.finance-history-panel button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.finance-history-panel .finance-save-status {
+  display: block;
+  margin-top: 18px;
+  color: #557889;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.finance-history-panel hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #e7eeec;
+}
+
+/* Saved plan cards */
+.finance-history-panel .finance-plan-card {
+  margin-top: 14px;
+  padding: 18px;
+  background: #f7faf9;
+  border: 1px solid #e1eae7;
+  border-radius: 12px;
+}
+
+.finance-history-panel .finance-plan-card h4 {
+  margin: 0 0 8px;
+  color: #214c61;
+  font-size: 17px;
+}
+
+.finance-history-panel .finance-plan-card p {
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.finance-history-panel .finance-plan-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.finance-history-panel .finance-plan-actions button {
+  padding: 9px 15px;
+}
+
+.finance-history-panel .finance-plan-actions button:last-child {
+  color: #a53c3c;
+  background: #fff;
+  border-color: #e6caca;
+}
+
+.finance-history-panel .finance-plan-actions button:last-child:hover {
+  background: #fff1f1;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .finance-history-panel {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .finance-history-panel h3 {
+    font-size: 21px;
+  }
+
+  .finance-history-panel input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .finance-history-panel > div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .finance-history-panel > div button {
+    width: 100%;
+  }
+
+  .finance-history-panel .finance-plan-actions {
+    flex-direction: row;
+  }
+
+  .finance-history-panel .finance-plan-actions button {
+    flex: 1;
+  }
+}

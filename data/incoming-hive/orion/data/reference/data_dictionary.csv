@@ -1,0 +1,158 @@
+dataset,column_name,data_type,unit,description,dataset_purpose
+marine_species,species_id,string,,Unique species key (SP###),"Species catalogue, search, details and map markers"
+marine_species,scientific_name,string,,Latin binomial (real taxon; ranges approximate),"Species catalogue, search, details and map markers"
+marine_species,common_name,string,,English common name,"Species catalogue, search, details and map markers"
+marine_species,species_group,string,,Taxonomic/functional group,"Species catalogue, search, details and map markers"
+marine_species,habitat_type,string,,coastal | reef | estuary | pelagic | deep_sea | polar,"Species catalogue, search, details and map markers"
+marine_species,trophic_level,float,,Approximate trophic level,"Species catalogue, search, details and map markers"
+marine_species,min_temperature_c,float,degC,Lower tolerated water temperature (approximate),"Species catalogue, search, details and map markers"
+marine_species,max_temperature_c,float,degC,Upper tolerated water temperature (approximate),"Species catalogue, search, details and map markers"
+marine_species,min_salinity_psu,float,PSU,Lower tolerated salinity,"Species catalogue, search, details and map markers"
+marine_species,max_salinity_psu,float,PSU,Upper tolerated salinity,"Species catalogue, search, details and map markers"
+marine_species,min_depth_m,float,m,Shallowest typical depth,"Species catalogue, search, details and map markers"
+marine_species,max_depth_m,float,m,Deepest typical depth,"Species catalogue, search, details and map markers"
+marine_species,conservation_status,string,,"IUCN-style code (LC NT VU EN CR DD NE); approximate, verify before citing","Species catalogue, search, details and map markers"
+marine_species,aquaculture_potential,string,,Not_suitable | Low | Medium | High (simulated judgement),"Species catalogue, search, details and map markers"
+marine_species,species_description,string,,Auto-generated short description,"Species catalogue, search, details and map markers"
+marine_species,image_url,float,,Always empty (no verified URLs),"Species catalogue, search, details and map markers"
+marine_species,data_origin,string,,Provenance label (all simulated / approximate),"Species catalogue, search, details and map markers"
+marine_species,image_search_query,string,,Query to find a photo manually,"Species catalogue, search, details and map markers"
+species_occurrences,occurrence_id,string,,Unique occurrence key,Simulated occurrence points for global map and spatial analysis
+species_occurrences,species_id,string,,Unique species key (SP###),Simulated occurrence points for global map and spatial analysis
+species_occurrences,latitude,float,degrees,"WGS84 latitude, decimal degrees (-90..90)",Simulated occurrence points for global map and spatial analysis
+species_occurrences,longitude,float,degrees,"WGS84 longitude, decimal degrees (-180..180)",Simulated occurrence points for global map and spatial analysis
+species_occurrences,observation_date,string,,Simulated observation date (ISO),Simulated occurrence points for global map and spatial analysis
+species_occurrences,depth_m,float,m,Depth below surface,Simulated occurrence points for global map and spatial analysis
+species_occurrences,water_temperature_c,float,degC,Water temperature at the stated depth,Simulated occurrence points for global map and spatial analysis
+species_occurrences,salinity_psu,float,PSU,Practical salinity,Simulated occurrence points for global map and spatial analysis
+species_occurrences,dissolved_oxygen_mg_l,float,mg/L,Dissolved oxygen concentration,Simulated occurrence points for global map and spatial analysis
+species_occurrences,ocean_basin,string,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)",Simulated occurrence points for global map and spatial analysis
+species_occurrences,location_name,string,,Simulation region name,Simulated occurrence points for global map and spatial analysis
+species_occurrences,observation_source,string,,SIMULATED_* source label,Simulated occurrence points for global map and spatial analysis
+species_occurrences,is_synthetic,bool,,Always true: record is simulated,Simulated occurrence points for global map and spatial analysis
+ocean_conditions,measurement_id,string,,Unique measurement key,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,latitude,float,degrees,"WGS84 latitude, decimal degrees (-90..90)","Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,longitude,float,degrees,"WGS84 longitude, decimal degrees (-180..180)","Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,measurement_date,string,,Simulated measurement date (ISO),"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,ocean_basin,string,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)","Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,depth_m,float,m,Depth below surface,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,sea_surface_temperature_c,float,degC,Surface temperature at the location/date,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,water_temperature_c,float,degC,Water temperature at the stated depth,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,salinity_psu,float,PSU,Practical salinity,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,dissolved_oxygen_mg_l,float,mg/L,Dissolved oxygen concentration,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,ph,float,pH units,"pH (total scale, approximate)","Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,chlorophyll_a_mg_m3,float,mg/m3,Chlorophyll-a concentration,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,nitrate_umol_l,float,umol/L,Nitrate concentration,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,wave_height_m,float,m,Significant wave height (surface condition),"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,current_speed_m_s,float,m/s,Current speed at depth,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions,is_synthetic,bool,,Always true: record is simulated,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+aquaculture_sites,site_id,string,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,site_name,string,,Simulated site name (prefixed SIM),Simulated aquaculture site management and suitability assessment
+aquaculture_sites,latitude,float,degrees,"WGS84 latitude, decimal degrees (-90..90)",Simulated aquaculture site management and suitability assessment
+aquaculture_sites,longitude,float,degrees,"WGS84 longitude, decimal degrees (-180..180)",Simulated aquaculture site management and suitability assessment
+aquaculture_sites,country_or_region,string,,Country/region label of the simulation region,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,ocean_basin,string,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)",Simulated aquaculture site management and suitability assessment
+aquaculture_sites,site_type,string,,marine_cage | earthen_pond | longline_raft | land_based_ras | onshore_raceway,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,farm_area_hectares,float,ha,Simulated farm area,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,water_depth_m,float,m,Local water depth at site,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,average_temperature_c,float,degC,Annual mean temperature at culture depth,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,average_salinity_psu,float,PSU,Annual mean salinity,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,average_dissolved_oxygen_mg_l,float,mg/L,Annual mean DO,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,water_quality_index,float,0-100,0-100 water-quality score (same formula as habitat water_quality_score),Simulated aquaculture site management and suitability assessment
+aquaculture_sites,infrastructure_access_score,float,0-100,0-100 simulated infrastructure access,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,environmental_risk_score,float,0-100,0-100 risk score (higher = riskier),Simulated aquaculture site management and suitability assessment
+aquaculture_sites,estimated_production_capacity_tonnes_year,float,tonnes/year,Simulated annual capacity,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,site_status,string,,Operational | Planned | Under_Construction | Fallow | Suspended,Simulated aquaculture site management and suitability assessment
+aquaculture_sites,is_synthetic,bool,,Always true: record is simulated,Simulated aquaculture site management and suitability assessment
+habitat_suitability,habitat_id,string,,Unique habitat-point key (H#####); H00001-H01000 coincide with sites S0001-S1000,"ML clustering, habitat matching and site recommendation"
+habitat_suitability,latitude,float,degrees,"WGS84 latitude, decimal degrees (-90..90)","ML clustering, habitat matching and site recommendation"
+habitat_suitability,longitude,float,degrees,"WGS84 longitude, decimal degrees (-180..180)","ML clustering, habitat matching and site recommendation"
+habitat_suitability,ocean_basin,string,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)","ML clustering, habitat matching and site recommendation"
+habitat_suitability,temperature_c,float,degC,Annual mean temperature at depth_m,"ML clustering, habitat matching and site recommendation"
+habitat_suitability,salinity_psu,float,PSU,Practical salinity,"ML clustering, habitat matching and site recommendation"
+habitat_suitability,dissolved_oxygen_mg_l,float,mg/L,Dissolved oxygen concentration,"ML clustering, habitat matching and site recommendation"
+habitat_suitability,ph,float,pH units,"pH (total scale, approximate)","ML clustering, habitat matching and site recommendation"
+habitat_suitability,depth_m,float,m,Depth below surface,"ML clustering, habitat matching and site recommendation"
+habitat_suitability,chlorophyll_a_mg_m3,float,mg/m3,Chlorophyll-a concentration,"ML clustering, habitat matching and site recommendation"
+habitat_suitability,wave_height_m,float,m,Significant wave height (surface condition),"ML clustering, habitat matching and site recommendation"
+habitat_suitability,water_quality_score,float,0-100,0-100 water-quality score,"ML clustering, habitat matching and site recommendation"
+habitat_suitability,environmental_risk_score,float,0-100,0-100 risk score (higher = riskier),"ML clustering, habitat matching and site recommendation"
+habitat_suitability,suitable_species_id,string,,Best-matching aquaculture-capable species,"ML clustering, habitat matching and site recommendation"
+habitat_suitability,suitability_score,float,0-100,"0-100 habitat suitability (simulated formula, not validated)","ML clustering, habitat matching and site recommendation"
+habitat_suitability,suitability_class,string,,Low | Moderate | High | Very High,"ML clustering, habitat matching and site recommendation"
+habitat_suitability,cluster_id,int,,K-means cluster (0 = coldest),"ML clustering, habitat matching and site recommendation"
+habitat_suitability,is_synthetic,bool,,Always true: record is simulated,"ML clustering, habitat matching and site recommendation"
+species_environment_compatibility,compatibility_id,string,,Unique compatibility key,Species-to-habitat matching scores
+species_environment_compatibility,species_id,string,,Unique species key (SP###),Species-to-habitat matching scores
+species_environment_compatibility,habitat_id,string,,Unique habitat-point key (H#####); H00001-H01000 coincide with sites S0001-S1000,Species-to-habitat matching scores
+species_environment_compatibility,temperature_compatibility_score,float,0-100,0-100 temperature fit,Species-to-habitat matching scores
+species_environment_compatibility,salinity_compatibility_score,float,0-100,0-100 salinity fit,Species-to-habitat matching scores
+species_environment_compatibility,oxygen_compatibility_score,float,0-100,0-100 oxygen fit (vs species minimum DO requirement),Species-to-habitat matching scores
+species_environment_compatibility,depth_compatibility_score,float,0-100,0-100 depth fit,Species-to-habitat matching scores
+species_environment_compatibility,overall_compatibility_score,float,0-100,Weighted 0-100 fit,Species-to-habitat matching scores
+species_environment_compatibility,compatibility_class,string,,Excellent | Good | Fair | Poor,Species-to-habitat matching scores
+species_environment_compatibility,explanation,string,,Plain-text breakdown of the score,Species-to-habitat matching scores
+fish_production,production_id,string,,Unique production record key,Monthly simulated production analytics
+fish_production,site_id,string,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows,Monthly simulated production analytics
+fish_production,species_id,string,,Unique species key (SP###),Monthly simulated production analytics
+fish_production,reporting_year,int,,Calendar year,Monthly simulated production analytics
+fish_production,reporting_month,int,,Calendar month 1-12,Monthly simulated production analytics
+fish_production,production_tonnes,float,tonnes,Harvested tonnes in the month,Monthly simulated production analytics
+fish_production,feed_consumption_tonnes,float,tonnes,Feed used (0 for non-fed species),Monthly simulated production analytics
+fish_production,feed_conversion_ratio,float,,Feed / production (0 for non-fed species),Monthly simulated production analytics
+fish_production,mortality_rate_percent,float,%,Monthly mortality,Monthly simulated production analytics
+fish_production,survival_rate_percent,float,%,100 - mortality_rate_percent (monthly),Monthly simulated production analytics
+fish_production,operating_cost_usd,float,USD,Sum of linked expense transactions,Monthly simulated production analytics
+fish_production,revenue_usd,float,USD,Linked 'Fish sales' income,Monthly simulated production analytics
+fish_production,data_origin,string,,Provenance label (all simulated / approximate),Monthly simulated production analytics
+resource_inventory,resource_id,string,,Unique inventory item key,Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,site_id,string,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows,Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,resource_name,string,,Item name,Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,resource_category,string,,Feed | Seed stock | Equipment | Water-quality testing supplies | Medicines | Maintenance materials,Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,quantity_available,float,,Quantity on hand at 2024-12-31,Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,unit,string,,Unit of quantity,Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,reorder_threshold,float,,Reorder level (same unit),Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,unit_cost_usd,float,USD,Cost per unit,Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,supplier_name,string,,Fictional supplier,Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,last_restock_date,string,,Last restock (ISO),Simulated aquaculture resource management snapshot (2024-12-31)
+resource_inventory,resource_status,string,,In_Stock | Low_Stock (qty<=threshold) | Out_of_Stock (qty=0),Simulated aquaculture resource management snapshot (2024-12-31)
+finance_transactions,transaction_id,string,,Unique transaction key,"Finance simulator, expense tracking, cash flow"
+finance_transactions,site_id,string,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows,"Finance simulator, expense tracking, cash flow"
+finance_transactions,transaction_date,string,,Transaction date (ISO),"Finance simulator, expense tracking, cash flow"
+finance_transactions,transaction_type,string,,income | expense,"Finance simulator, expense tracking, cash flow"
+finance_transactions,category,string,,Fish sales | Feed | Labour | Energy | Maintenance | Equipment | Transport | Other operating costs,"Finance simulator, expense tracking, cash flow"
+finance_transactions,description,string,,Text description (SIMULATED),"Finance simulator, expense tracking, cash flow"
+finance_transactions,amount_usd,float,USD,Positive amount in USD; sign given by transaction_type,"Finance simulator, expense tracking, cash flow"
+finance_transactions,payment_method,string,,Payment method,"Finance simulator, expense tracking, cash flow"
+finance_transactions,related_production_id,string,,Production record this transaction belongs to,"Finance simulator, expense tracking, cash flow"
+finance_transactions,is_simulated,bool,,Always true,"Finance simulator, expense tracking, cash flow"
+dashboard_kpis,kpi_id,string,,"Unique KPI row key; KPI-M = month, KPI-Y = year",Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,period_start,string,,Period start (ISO),Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,period_end,string,,Period end (ISO),Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,site_id,string,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows,Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,total_production_tonnes,float,tonnes,Sum of production_tonnes,Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,total_revenue_usd,float,USD,Sum of income transactions,Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,total_expenses_usd,float,USD,Sum of expense transactions,Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,net_profit_usd,float,USD,revenue - expenses,Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,average_mortality_rate_percent,float,%,Mean mortality over production records in period,Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,average_water_quality_score,float,0-100,Mean water_quality_index of active sites,Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,average_habitat_suitability_score,float,0-100,Mean suitability_score of habitat points at active sites,Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,low_inventory_item_count,int,,Low/Out-of-stock items at 2024-12-31 snapshot (repeated for every period),Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,active_site_count,int,,Sites with production in period,Power BI KPI cards and trends (aggregated from other tables)
+dashboard_kpis,data_origin,string,,Provenance label (all simulated / approximate),Power BI KPI cards and trends (aggregated from other tables)
+ocean_conditions_cleaned,measurement_id,string,,Unique measurement key,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,latitude,float,degrees,"WGS84 latitude, decimal degrees (-90..90)","Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,longitude,float,degrees,"WGS84 longitude, decimal degrees (-180..180)","Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,measurement_date,string,,Simulated measurement date (ISO),"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,ocean_basin,string,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)","Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,depth_m,float,m,Depth below surface,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,sea_surface_temperature_c,float,degC,Surface temperature at the location/date,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,water_temperature_c,float,degC,Water temperature at the stated depth,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,salinity_psu,float,PSU,Practical salinity,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,dissolved_oxygen_mg_l,float,mg/L,Dissolved oxygen concentration,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,ph,float,pH units,"pH (total scale, approximate)","Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,chlorophyll_a_mg_m3,float,mg/m3,Chlorophyll-a concentration,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,nitrate_umol_l,float,umol/L,Nitrate concentration,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,wave_height_m,float,m,Significant wave height (surface condition),"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,current_speed_m_s,float,m/s,Current speed at depth,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"
+ocean_conditions_cleaned,is_synthetic,bool,,Always true: record is simulated,"Simulated global ocean environment for Spark cleaning, Hive queries and Power BI"

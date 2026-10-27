@@ -1,0 +1,350 @@
+table_name,layer,table_purpose,column_name,hive_type,unit,description
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",species_id,STRING,,Unique species key (SP###)
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",scientific_name,STRING,,Latin binomial (real taxon; ranges approximate)
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",common_name,STRING,,English common name
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",species_group,STRING,,Taxonomic/functional group
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",habitat_type,STRING,,coastal | reef | estuary | pelagic | deep_sea | polar
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",trophic_level,DOUBLE,,Approximate trophic level
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",min_temperature_c,DOUBLE,degC,Lower tolerated water temperature (approximate)
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",max_temperature_c,DOUBLE,degC,Upper tolerated water temperature (approximate)
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",min_salinity_psu,DOUBLE,PSU,Lower tolerated salinity
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",max_salinity_psu,DOUBLE,PSU,Upper tolerated salinity
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",min_depth_m,DOUBLE,m,Shallowest typical depth
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",max_depth_m,DOUBLE,m,Deepest typical depth
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",conservation_status,STRING,,"IUCN-style code (LC NT VU EN CR DD NE); approximate, verify before citing"
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",aquaculture_potential,STRING,,Not_suitable | Low | Medium | High (simulated judgement)
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",species_description,STRING,,Auto-generated short description
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",data_origin,STRING,,Provenance label (all simulated / approximate)
+marine_species,clean table,"Species catalogue: tolerances, group, aquaculture potential (simulated, approximate)",image_search_query,STRING,,Query to find a photo manually
+species_occurrences,clean table,Simulated sighting points for the map,occurrence_id,STRING,,Unique occurrence key
+species_occurrences,clean table,Simulated sighting points for the map,species_id,STRING,,Unique species key (SP###)
+species_occurrences,clean table,Simulated sighting points for the map,latitude,DOUBLE,degrees,"WGS84 latitude, decimal degrees (-90..90)"
+species_occurrences,clean table,Simulated sighting points for the map,longitude,DOUBLE,degrees,"WGS84 longitude, decimal degrees (-180..180)"
+species_occurrences,clean table,Simulated sighting points for the map,obs_date,DATE,,Simulated observation date (ISO)
+species_occurrences,clean table,Simulated sighting points for the map,depth_m,DOUBLE,m,Depth below surface
+species_occurrences,clean table,Simulated sighting points for the map,water_temperature_c,DOUBLE,degC,Water temperature at the stated depth
+species_occurrences,clean table,Simulated sighting points for the map,salinity_psu,DOUBLE,PSU,Practical salinity
+species_occurrences,clean table,Simulated sighting points for the map,dissolved_oxygen_mg_l,DOUBLE,mg/L,Dissolved oxygen concentration
+species_occurrences,clean table,Simulated sighting points for the map,ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+species_occurrences,clean table,Simulated sighting points for the map,location_name,STRING,,Simulation region name
+species_occurrences,clean table,Simulated sighting points for the map,observation_source,STRING,,SIMULATED_* source label
+species_occurrences,clean table,Simulated sighting points for the map,is_synthetic,BOOLEAN,,Always true: record is simulated
+species_occurrences,clean table,Simulated sighting points for the map,obs_year,INT,,Partition column / derived: year of obs_date
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",site_id,STRING,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",site_name,STRING,,Simulated site name (prefixed SIM)
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",latitude,DOUBLE,degrees,"WGS84 latitude, decimal degrees (-90..90)"
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",longitude,DOUBLE,degrees,"WGS84 longitude, decimal degrees (-180..180)"
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",country_or_region,STRING,,Country/region label of the simulation region
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",site_type,STRING,,marine_cage | earthen_pond | longline_raft | land_based_ras | onshore_raceway
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",farm_area_hectares,DOUBLE,ha,Simulated farm area
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",water_depth_m,DOUBLE,m,Local water depth at site
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",average_temperature_c,DOUBLE,degC,Annual mean temperature at culture depth
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",average_salinity_psu,DOUBLE,PSU,Annual mean salinity
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",average_dissolved_oxygen_mg_l,DOUBLE,mg/L,Annual mean DO
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",water_quality_index,DOUBLE,0-100,0-100 water-quality score (same formula as habitat water_quality_score)
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",infrastructure_access_score,DOUBLE,0-100,0-100 simulated infrastructure access
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",environmental_risk_score,DOUBLE,0-100,0-100 risk score (higher = riskier)
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",capacity_tonnes_year,DOUBLE,tonnes/year,Simulated annual capacity
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",site_status,STRING,,Operational | Planned | Under_Construction | Fallow | Suspended
+aquaculture_sites,clean table,"1,000 simulated farms: location, type, status, capacity, quality/risk scores",is_synthetic,BOOLEAN,,Always true: record is simulated
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",habitat_id,STRING,,Unique habitat-point key (H#####); H00001-H01000 coincide with sites S0001-S1000
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",latitude,DOUBLE,degrees,"WGS84 latitude, decimal degrees (-90..90)"
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",longitude,DOUBLE,degrees,"WGS84 longitude, decimal degrees (-180..180)"
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",temperature_c,DOUBLE,degC,Annual mean temperature at depth_m
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",salinity_psu,DOUBLE,PSU,Practical salinity
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",dissolved_oxygen_mg_l,DOUBLE,mg/L,Dissolved oxygen concentration
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",ph,DOUBLE,pH units,"pH (total scale, approximate)"
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",depth_m,DOUBLE,m,Depth below surface
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",chlorophyll_a_mg_m3,DOUBLE,mg/m3,Chlorophyll-a concentration
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",wave_height_m,DOUBLE,m,Significant wave height (surface condition)
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",water_quality_score,DOUBLE,0-100,0-100 water-quality score
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",environmental_risk_score,DOUBLE,0-100,0-100 risk score (higher = riskier)
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",suitable_species_id,STRING,,Best-matching aquaculture-capable species
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",suitability_score,DOUBLE,0-100,"0-100 habitat suitability (simulated formula, not validated)"
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",suitability_class,STRING,,Low | Moderate | High | Very High
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",cluster_id,INT,,K-means cluster (0 = coldest)
+habitat_suitability,clean table,"Candidate habitat cells with best-fit species, suitability score/class and ML cluster",is_synthetic,BOOLEAN,,Always true: record is simulated
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,compatibility_id,STRING,,Unique compatibility key
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,species_id,STRING,,Unique species key (SP###)
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,habitat_id,STRING,,Unique habitat-point key (H#####); H00001-H01000 coincide with sites S0001-S1000
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,temperature_compatibility_score,DOUBLE,0-100,0-100 temperature fit
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,salinity_compatibility_score,DOUBLE,0-100,0-100 salinity fit
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,oxygen_compatibility_score,DOUBLE,0-100,0-100 oxygen fit (vs species minimum DO requirement)
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,depth_compatibility_score,DOUBLE,0-100,0-100 depth fit
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,overall_compatibility_score,DOUBLE,0-100,Weighted 0-100 fit
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,compatibility_class,STRING,,Excellent | Good | Fair | Poor
+species_environment_compat,clean table,Species x habitat compatibility sub-scores,explanation,STRING,,Plain-text breakdown of the score
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",production_id,STRING,,Unique production record key
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",site_id,STRING,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",species_id,STRING,,Unique species key (SP###)
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",reporting_year,INT,,Calendar year
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",reporting_month,INT,,Calendar month 1-12
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",production_tonnes,DOUBLE,tonnes,Harvested tonnes in the month
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",feed_consumption_tonnes,DOUBLE,tonnes,Feed used (0 for non-fed species)
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",feed_conversion_ratio,DOUBLE,,Feed / production (0 for non-fed species)
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",mortality_rate_percent,DOUBLE,%,Monthly mortality
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",survival_rate_percent,DOUBLE,%,100 - mortality_rate_percent (monthly)
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",operating_cost_usd,DOUBLE,USD,Sum of linked expense transactions
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",revenue_usd,DOUBLE,USD,Linked 'Fish sales' income
+fish_production,clean table,"FACT: monthly production, feed, mortality, cost, revenue per site x species (partition: reporting_year)",data_origin,STRING,,Provenance label (all simulated / approximate)
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),transaction_id,STRING,,Unique transaction key
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),site_id,STRING,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),txn_date,DATE,,Transaction date (ISO)
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),transaction_type,STRING,,income | expense
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),category,STRING,,Fish sales | Feed | Labour | Energy | Maintenance | Equipment | Transport | Other operating costs
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),description,STRING,,Text description (SIMULATED)
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),amount_usd,DOUBLE,USD,Positive amount in USD; sign given by transaction_type
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),payment_method,STRING,,Payment method
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),related_production_id,STRING,,Production record this transaction belongs to
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),is_simulated,BOOLEAN,,Always true
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),txn_month,INT,,Month number 1-12 of txn_date
+finance_transactions,clean table,FACT: income/expense ledger (partition: txn_year),txn_year,INT,,Partition column: year of txn_date
+resource_inventory,clean table,Stock on hand per site and resource,resource_id,STRING,,Unique inventory item key
+resource_inventory,clean table,Stock on hand per site and resource,site_id,STRING,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows
+resource_inventory,clean table,Stock on hand per site and resource,resource_name,STRING,,Item name
+resource_inventory,clean table,Stock on hand per site and resource,resource_category,STRING,,Feed | Seed stock | Equipment | Water-quality testing supplies | Medicines | Maintenance materials
+resource_inventory,clean table,Stock on hand per site and resource,quantity_available,DOUBLE,,Quantity on hand at 2024-12-31
+resource_inventory,clean table,Stock on hand per site and resource,unit,STRING,,Unit of quantity
+resource_inventory,clean table,Stock on hand per site and resource,reorder_threshold,DOUBLE,,Reorder level (same unit)
+resource_inventory,clean table,Stock on hand per site and resource,unit_cost_usd,DOUBLE,USD,Cost per unit
+resource_inventory,clean table,Stock on hand per site and resource,supplier_name,STRING,,Fictional supplier
+resource_inventory,clean table,Stock on hand per site and resource,last_restock_date,DATE,,Last restock (ISO)
+resource_inventory,clean table,Stock on hand per site and resource,resource_status,STRING,,In_Stock | Low_Stock (qty<=threshold) | Out_of_Stock (qty=0)
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",kpi_id,STRING,,"Unique KPI row key; KPI-M = month, KPI-Y = year"
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",period_start,DATE,,Period start (ISO)
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",period_end,DATE,,Period end (ISO)
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",site_id,STRING,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",total_production_tonnes,DOUBLE,tonnes,Sum of production_tonnes
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",total_revenue_usd,DOUBLE,USD,Sum of income transactions
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",total_expenses_usd,DOUBLE,USD,Sum of expense transactions
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",net_profit_usd,DOUBLE,USD,revenue - expenses
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",average_mortality_rate_percent,DOUBLE,%,Mean mortality over production records in period
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",average_water_quality_score,DOUBLE,0-100,Mean water_quality_index of active sites
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",average_habitat_suitability_score,DOUBLE,0-100,Mean suitability_score of habitat points at active sites
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",low_inventory_item_count,INT,,Low/Out-of-stock items at 2024-12-31 snapshot (repeated for every period)
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",active_site_count,INT,,Sites with production in period
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",data_origin,STRING,,Provenance label (all simulated / approximate)
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",kpi_grain,STRING,,"monthly | yearly, derived from kpi_id (KPI-M-* / KPI-Y-*)"
+dashboard_kpis,clean table,"Pre-aggregated KPIs: site x month, site x year and company-wide 'ALL' rows",kpi_scope,STRING,,site | all - 'all' = company-wide row (site_id = 'ALL'); never add site and all rows together
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),measurement_id,STRING,,Unique measurement key
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),latitude,DOUBLE,degrees,"WGS84 latitude, decimal degrees (-90..90)"
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),longitude,DOUBLE,degrees,"WGS84 longitude, decimal degrees (-180..180)"
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),obs_date,DATE,,Simulated measurement date (ISO)
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),depth_m,DOUBLE,m,Depth below surface
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),sea_surface_temperature_c,DOUBLE,degC,Surface temperature at the location/date
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),water_temperature_c,DOUBLE,degC,Water temperature at the stated depth
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),salinity_psu,DOUBLE,PSU,Practical salinity
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),dissolved_oxygen_mg_l,DOUBLE,mg/L,Dissolved oxygen concentration
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),ph,DOUBLE,pH units,"pH (total scale, approximate)"
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),chlorophyll_a_mg_m3,DOUBLE,mg/m3,Chlorophyll-a concentration
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),nitrate_umol_l,DOUBLE,umol/L,Nitrate concentration
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),wave_height_m,DOUBLE,m,Significant wave height (surface condition)
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),current_speed_m_s,DOUBLE,m/s,Current speed at depth
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),is_synthetic,BOOLEAN,,Always true: record is simulated
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),obs_month,INT,,Month number 1-12 of obs_date
+ocean_conditions,clean table,Ocean measurements AFTER cleaning (nulls imputed) (partition: obs_year),obs_year,INT,,Partition column / derived: year of obs_date
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,measurement_id,STRING,,Unique measurement key
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,latitude,DOUBLE,degrees,"WGS84 latitude, decimal degrees (-90..90)"
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,longitude,DOUBLE,degrees,"WGS84 longitude, decimal degrees (-180..180)"
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,obs_date,DATE,,Simulated measurement date (ISO)
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,depth_m,DOUBLE,m,Depth below surface
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,sea_surface_temperature_c,DOUBLE,degC,Surface temperature at the location/date
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,water_temperature_c,DOUBLE,degC,Water temperature at the stated depth
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,salinity_psu,DOUBLE,PSU,Practical salinity
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,dissolved_oxygen_mg_l,DOUBLE,mg/L,Dissolved oxygen concentration
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,ph,DOUBLE,pH units,"pH (total scale, approximate)"
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,chlorophyll_a_mg_m3,DOUBLE,mg/m3,Chlorophyll-a concentration
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,nitrate_umol_l,DOUBLE,umol/L,Nitrate concentration
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,wave_height_m,DOUBLE,m,Significant wave height (surface condition)
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,current_speed_m_s,DOUBLE,m/s,Current speed at depth
+ocean_conditions_raw,clean table,Ocean measurements BEFORE cleaning (nulls kept) - audit only,is_synthetic,BOOLEAN,,Always true: record is simulated
+sum_finance_monthly,summary table,Aggregated for React dashboard / Power BI,txn_year,INT,,Calendar year of the transactions
+sum_finance_monthly,summary table,Aggregated for React dashboard / Power BI,txn_month,INT,,Month number 1-12
+sum_finance_monthly,summary table,Aggregated for React dashboard / Power BI,year_month,INT,,"YYYYMM integer, e.g. 202403"
+sum_finance_monthly,summary table,Aggregated for React dashboard / Power BI,transaction_type,STRING,,income | expense
+sum_finance_monthly,summary table,Aggregated for React dashboard / Power BI,category,STRING,,Fish sales | Feed | Labour | Energy | Maintenance | Equipment | Transport | Other operating costs
+sum_finance_monthly,summary table,Aggregated for React dashboard / Power BI,transactions,BIGINT,count,Number of transactions
+sum_finance_monthly,summary table,Aggregated for React dashboard / Power BI,total_usd,DOUBLE,USD,SUM(amount_usd)
+sum_habitat_by_basin,summary table,Aggregated for React dashboard / Power BI,ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+sum_habitat_by_basin,summary table,Aggregated for React dashboard / Power BI,suitability_class,STRING,,Low | Moderate | High | Very High
+sum_habitat_by_basin,summary table,Aggregated for React dashboard / Power BI,habitat_cells,BIGINT,count,Habitat cells in the group
+sum_habitat_by_basin,summary table,Aggregated for React dashboard / Power BI,avg_suitability_score,DOUBLE,0-100,Mean suitability_score
+sum_habitat_by_basin,summary table,Aggregated for React dashboard / Power BI,avg_water_quality_score,DOUBLE,0-100,Mean water_quality_score
+sum_habitat_by_basin,summary table,Aggregated for React dashboard / Power BI,avg_env_risk_score,DOUBLE,0-100,Mean environmental_risk_score
+sum_habitat_by_basin,summary table,Aggregated for React dashboard / Power BI,pct_of_basin,DOUBLE,%,Share of the basin's rows (habitat cells)
+sum_inventory_status,summary table,Aggregated for React dashboard / Power BI,ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+sum_inventory_status,summary table,Aggregated for React dashboard / Power BI,resource_category,STRING,,Feed | Seed stock | Equipment | Water-quality testing supplies | Medicines | Maintenance materials
+sum_inventory_status,summary table,Aggregated for React dashboard / Power BI,resource_status,STRING,,In_Stock | Low_Stock (qty<=threshold) | Out_of_Stock (qty=0)
+sum_inventory_status,summary table,Aggregated for React dashboard / Power BI,items,BIGINT,count,Inventory items
+sum_inventory_status,summary table,Aggregated for React dashboard / Power BI,stock_value_usd,DOUBLE,USD,SUM(quantity_available x unit_cost_usd)
+sum_inventory_status,summary table,Aggregated for React dashboard / Power BI,pct_of_category,DOUBLE,%,Share of items in the same basin + category
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,obs_year,INT,,Calendar year of the measurements
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,obs_month,INT,,Month number 1-12
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,measurements,BIGINT,count,Number of ocean measurements averaged
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,avg_sst_c,DOUBLE,degC,Mean sea-surface temperature
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,avg_water_temp_c,DOUBLE,degC,Mean water temperature
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,avg_salinity_psu,DOUBLE,PSU,Mean salinity
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,avg_dissolved_oxygen_mg_l,DOUBLE,mg/L,Mean dissolved oxygen
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,avg_ph,DOUBLE,pH,Mean pH
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,avg_chlorophyll_mg_m3,DOUBLE,mg/m3,Mean chlorophyll-a
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,avg_nitrate_umol_l,DOUBLE,umol/L,Mean nitrate
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,avg_wave_height_m,DOUBLE,m,Mean wave height
+sum_ocean_basin_month,summary table,Aggregated for React dashboard / Power BI,avg_current_speed_m_s,DOUBLE,m/s,Mean current speed
+sum_overview_kpis,summary table,Aggregated for React dashboard / Power BI,metric,STRING,,KPI name
+sum_overview_kpis,summary table,Aggregated for React dashboard / Power BI,metric_value,DOUBLE,,KPI value
+sum_overview_kpis,summary table,Aggregated for React dashboard / Power BI,unit,STRING,,Unit of metric_value
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,reporting_year,INT,,Calendar year
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,production_records,BIGINT,count,Number of fish_production rows aggregated
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,active_sites,BIGINT,sites,Distinct sites with production in the group
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,total_tonnes,DOUBLE,tonnes,SUM(production_tonnes)
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,avg_tonnes_per_record,DOUBLE,tonnes,AVG(production_tonnes) per site-species-month record
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,feed_conversion_ratio,DOUBLE,ratio,SUM(feed)/SUM(production) - tonnes of feed per tonne produced; 0 for unfed algae/molluscs
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,avg_mortality_pct,DOUBLE,%,Average mortality_rate_percent
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,avg_survival_pct,DOUBLE,%,Average survival_rate_percent
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,total_revenue_usd,DOUBLE,USD,SUM(revenue_usd)
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,total_cost_usd,DOUBLE,USD,SUM(operating_cost_usd)
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,gross_profit_usd,DOUBLE,USD,revenue - operating cost
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,profit_margin_pct,DOUBLE,%,100 x gross profit / revenue
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,revenue_per_tonne_usd,DOUBLE,USD/t,revenue / tonnes
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,prev_year_tonnes,DOUBLE,tonnes,"Same group, previous year total tonnes (NULL for 2023)"
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,tonnes_yoy_pct,DOUBLE,%,Year-over-year change in tonnes (2024 vs 2023); NULL for 2023
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,revenue_yoy_pct,DOUBLE,%,Year-over-year change in revenue
+sum_production_by_basin_year,summary table,Aggregated for React dashboard / Power BI,profit_yoy_pct,DOUBLE,%,Year-over-year change in gross profit (NULL if previous profit <= 0)
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,country_or_region,STRING,,Country/region label of the simulation region
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,reporting_year,INT,,Calendar year
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,production_records,BIGINT,count,Number of fish_production rows aggregated
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,active_sites,BIGINT,sites,Distinct sites with production in the group
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,total_tonnes,DOUBLE,tonnes,SUM(production_tonnes)
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,avg_tonnes_per_record,DOUBLE,tonnes,AVG(production_tonnes) per site-species-month record
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,feed_conversion_ratio,DOUBLE,ratio,SUM(feed)/SUM(production) - tonnes of feed per tonne produced; 0 for unfed algae/molluscs
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,avg_mortality_pct,DOUBLE,%,Average mortality_rate_percent
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,avg_survival_pct,DOUBLE,%,Average survival_rate_percent
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,total_revenue_usd,DOUBLE,USD,SUM(revenue_usd)
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,total_cost_usd,DOUBLE,USD,SUM(operating_cost_usd)
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,gross_profit_usd,DOUBLE,USD,revenue - operating cost
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,profit_margin_pct,DOUBLE,%,100 x gross profit / revenue
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,revenue_per_tonne_usd,DOUBLE,USD/t,revenue / tonnes
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,prev_year_tonnes,DOUBLE,tonnes,"Same group, previous year total tonnes (NULL for 2023)"
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,tonnes_yoy_pct,DOUBLE,%,Year-over-year change in tonnes (2024 vs 2023); NULL for 2023
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,revenue_yoy_pct,DOUBLE,%,Year-over-year change in revenue
+sum_production_by_country_year,summary table,Aggregated for React dashboard / Power BI,profit_yoy_pct,DOUBLE,%,Year-over-year change in gross profit (NULL if previous profit <= 0)
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,site_type,STRING,,marine_cage | earthen_pond | longline_raft | land_based_ras | onshore_raceway
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,reporting_year,INT,,Calendar year
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,production_records,BIGINT,count,Number of fish_production rows aggregated
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,active_sites,BIGINT,sites,Distinct sites with production in the group
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,total_tonnes,DOUBLE,tonnes,SUM(production_tonnes)
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,avg_tonnes_per_record,DOUBLE,tonnes,AVG(production_tonnes) per site-species-month record
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,feed_conversion_ratio,DOUBLE,ratio,SUM(feed)/SUM(production) - tonnes of feed per tonne produced; 0 for unfed algae/molluscs
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,avg_mortality_pct,DOUBLE,%,Average mortality_rate_percent
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,avg_survival_pct,DOUBLE,%,Average survival_rate_percent
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,total_revenue_usd,DOUBLE,USD,SUM(revenue_usd)
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,total_cost_usd,DOUBLE,USD,SUM(operating_cost_usd)
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,gross_profit_usd,DOUBLE,USD,revenue - operating cost
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,profit_margin_pct,DOUBLE,%,100 x gross profit / revenue
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,revenue_per_tonne_usd,DOUBLE,USD/t,revenue / tonnes
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,prev_year_tonnes,DOUBLE,tonnes,"Same group, previous year total tonnes (NULL for 2023)"
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,tonnes_yoy_pct,DOUBLE,%,Year-over-year change in tonnes (2024 vs 2023); NULL for 2023
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,revenue_yoy_pct,DOUBLE,%,Year-over-year change in revenue
+sum_production_by_site_type_year,summary table,Aggregated for React dashboard / Power BI,profit_yoy_pct,DOUBLE,%,Year-over-year change in gross profit (NULL if previous profit <= 0)
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,species_group,STRING,,Taxonomic/functional group
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,reporting_year,INT,,Calendar year
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,production_records,BIGINT,count,Number of fish_production rows aggregated
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,active_sites,BIGINT,sites,Distinct sites with production in the group
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,total_tonnes,DOUBLE,tonnes,SUM(production_tonnes)
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,avg_tonnes_per_record,DOUBLE,tonnes,AVG(production_tonnes) per site-species-month record
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,feed_conversion_ratio,DOUBLE,ratio,SUM(feed)/SUM(production) - tonnes of feed per tonne produced; 0 for unfed algae/molluscs
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,avg_mortality_pct,DOUBLE,%,Average mortality_rate_percent
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,avg_survival_pct,DOUBLE,%,Average survival_rate_percent
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,total_revenue_usd,DOUBLE,USD,SUM(revenue_usd)
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,total_cost_usd,DOUBLE,USD,SUM(operating_cost_usd)
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,gross_profit_usd,DOUBLE,USD,revenue - operating cost
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,profit_margin_pct,DOUBLE,%,100 x gross profit / revenue
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,revenue_per_tonne_usd,DOUBLE,USD/t,revenue / tonnes
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,prev_year_tonnes,DOUBLE,tonnes,"Same group, previous year total tonnes (NULL for 2023)"
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,tonnes_yoy_pct,DOUBLE,%,Year-over-year change in tonnes (2024 vs 2023); NULL for 2023
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,revenue_yoy_pct,DOUBLE,%,Year-over-year change in revenue
+sum_production_by_species_group_basin,summary table,Aggregated for React dashboard / Power BI,profit_yoy_pct,DOUBLE,%,Year-over-year change in gross profit (NULL if previous profit <= 0)
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,species_id,STRING,,Unique species key (SP###)
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,common_name,STRING,,English common name
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,scientific_name,STRING,,Latin binomial (real taxon; ranges approximate)
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,species_group,STRING,,Taxonomic/functional group
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,aquaculture_potential,STRING,,Not_suitable | Low | Medium | High (simulated judgement)
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,reporting_year,INT,,Calendar year
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,production_records,BIGINT,count,Number of fish_production rows aggregated
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,active_sites,BIGINT,sites,Distinct sites with production in the group
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,total_tonnes,DOUBLE,tonnes,SUM(production_tonnes)
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,avg_tonnes_per_record,DOUBLE,tonnes,AVG(production_tonnes) per site-species-month record
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,feed_conversion_ratio,DOUBLE,ratio,SUM(feed)/SUM(production) - tonnes of feed per tonne produced; 0 for unfed algae/molluscs
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,avg_mortality_pct,DOUBLE,%,Average mortality_rate_percent
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,avg_survival_pct,DOUBLE,%,Average survival_rate_percent
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,total_revenue_usd,DOUBLE,USD,SUM(revenue_usd)
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,total_cost_usd,DOUBLE,USD,SUM(operating_cost_usd)
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,gross_profit_usd,DOUBLE,USD,revenue - operating cost
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,profit_margin_pct,DOUBLE,%,100 x gross profit / revenue
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,revenue_per_tonne_usd,DOUBLE,USD/t,revenue / tonnes
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,prev_year_tonnes,DOUBLE,tonnes,"Same group, previous year total tonnes (NULL for 2023)"
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,tonnes_yoy_pct,DOUBLE,%,Year-over-year change in tonnes (2024 vs 2023); NULL for 2023
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,revenue_yoy_pct,DOUBLE,%,Year-over-year change in revenue
+sum_production_by_species_year,summary table,Aggregated for React dashboard / Power BI,profit_yoy_pct,DOUBLE,%,Year-over-year change in gross profit (NULL if previous profit <= 0)
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,reporting_year,INT,,Calendar year
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,reporting_month,INT,,Calendar month 1-12
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,year_month,INT,,"YYYYMM integer, e.g. 202403"
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,production_records,BIGINT,count,Number of fish_production rows aggregated
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,active_sites,BIGINT,sites,Distinct sites with production in the group
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,total_tonnes,DOUBLE,tonnes,SUM(production_tonnes)
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,avg_tonnes_per_record,DOUBLE,tonnes,AVG(production_tonnes) per site-species-month record
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,feed_conversion_ratio,DOUBLE,ratio,SUM(feed)/SUM(production) - tonnes of feed per tonne produced; 0 for unfed algae/molluscs
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,avg_mortality_pct,DOUBLE,%,Average mortality_rate_percent
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,avg_survival_pct,DOUBLE,%,Average survival_rate_percent
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,total_revenue_usd,DOUBLE,USD,SUM(revenue_usd)
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,total_cost_usd,DOUBLE,USD,SUM(operating_cost_usd)
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,gross_profit_usd,DOUBLE,USD,revenue - operating cost
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,profit_margin_pct,DOUBLE,%,100 x gross profit / revenue
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,revenue_per_tonne_usd,DOUBLE,USD/t,revenue / tonnes
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,prev_month_tonnes,DOUBLE,tonnes,Total tonnes in the previous month
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,tonnes_mom_pct,DOUBLE,%,Month-on-month change in tonnes
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,same_month_last_year_tonnes,DOUBLE,tonnes,Total tonnes in the same month one year earlier
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,tonnes_yoy_pct,DOUBLE,%,Year-over-year change in tonnes (2024 vs 2023); NULL for 2023
+sum_production_monthly,summary table,Aggregated for React dashboard / Power BI,tonnes_3m_moving_avg,DOUBLE,tonnes,Average of this and the previous two months
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,site_id,STRING,,Unique site key (S####); 'ALL' in dashboard_kpis portfolio rows
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,site_name,STRING,,Simulated site name (prefixed SIM)
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,country_or_region,STRING,,Country/region label of the simulation region
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,ocean_basin,STRING,,"Pacific | Atlantic | Indian | Southern | Arctic (approximate, region-based)"
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,site_type,STRING,,marine_cage | earthen_pond | longline_raft | land_based_ras | onshore_raceway
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,site_status,STRING,,Operational | Planned | Under_Construction | Fallow | Suspended
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,capacity_tonnes_year,DOUBLE,tonnes/year,Simulated annual capacity
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,months_reported,BIGINT,months,Distinct months with production
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,species_farmed,BIGINT,count,Distinct species produced at the site
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,total_tonnes,DOUBLE,tonnes,SUM(production_tonnes)
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,feed_conversion_ratio,DOUBLE,ratio,SUM(feed)/SUM(production) - tonnes of feed per tonne produced; 0 for unfed algae/molluscs
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,avg_mortality_pct,DOUBLE,%,Average mortality_rate_percent
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,total_revenue_usd,DOUBLE,USD,SUM(revenue_usd)
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,total_cost_usd,DOUBLE,USD,SUM(operating_cost_usd)
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,gross_profit_usd,DOUBLE,USD,revenue - operating cost
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,profit_margin_pct,DOUBLE,%,100 x gross profit / revenue
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,capacity_utilisation_pct,DOUBLE,%,Annualised tonnes (total/months x 12) as % of capacity_tonnes_year
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,profit_rank_in_basin,INT,rank,Rank by gross profit inside the ocean basin (1 = best)
+sum_site_performance,summary table,Aggregated for React dashboard / Power BI,tonnes_rank_global,INT,rank,"Rank by total tonnes, all sites"
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,species_id,STRING,,Unique species key (SP###)
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,common_name,STRING,,English common name
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,species_group,STRING,,Taxonomic/functional group
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,aquaculture_potential,STRING,,Not_suitable | Low | Medium | High (simulated judgement)
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,sites_farming,BIGINT,sites,Sites producing this species
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,basins,BIGINT,count,Ocean basins where it is produced
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,total_tonnes,DOUBLE,tonnes,SUM(production_tonnes)
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,total_revenue_usd,DOUBLE,USD,SUM(revenue_usd)
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,gross_profit_usd,DOUBLE,USD,revenue - operating cost
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,profit_margin_pct,DOUBLE,%,100 x gross profit / revenue
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,feed_conversion_ratio,DOUBLE,ratio,SUM(feed)/SUM(production) - tonnes of feed per tonne produced; 0 for unfed algae/molluscs
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,avg_mortality_pct,DOUBLE,%,Average mortality_rate_percent
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,tonnes_rank,INT,rank,Rank by total tonnes
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,profit_rank,INT,rank,Rank by gross profit
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,margin_rank,INT,rank,Rank by profit margin
+sum_species_ranking,summary table,Aggregated for React dashboard / Power BI,pct_of_total_tonnes,DOUBLE,%,Share of all production

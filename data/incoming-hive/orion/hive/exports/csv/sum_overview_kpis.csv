@@ -1,0 +1,15 @@
+metric,metric_value,unit
+total_production_tonnes,267149.83,tonnes
+total_revenue_usd,975807016.93,USD
+total_operating_cost_usd,686314543.59,USD
+gross_profit_usd,289492473.34,USD
+profit_margin_pct,29.67,%
+feed_conversion_ratio,1.143,ratio
+avg_mortality_pct,2.99,%
+sites_total,1000.0,sites
+sites_operational,593.0,sites
+sites_producing,230.0,sites
+species_catalogue,130.0,species
+species_farmed,52.0,species
+low_or_out_of_stock_items,491.0,items
+high_suitability_cells_pct,64.7,%
