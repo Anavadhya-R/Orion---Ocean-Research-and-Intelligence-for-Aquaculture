@@ -16,27 +16,43 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+
 st.markdown(
     """
     <style>
     .stApp {
-        background: linear-gradient(180deg, #071b2b 0%, #0b2538 100%);
-        color: #f1f7fb;
+        background: linear-gradient(135deg, #071b2b, #103b50);
+        color: #f4f8fc;
     }
     [data-testid="stSidebar"] {
         background-color: #102d42;
     }
-    [data-testid="stMetric"] {
-        background-color: #15384d;
-        border: 1px solid #28556b;
-        padding: 16px;
-        border-radius: 12px;
+    [data-testid="stSidebar"] * {
+        color: #f4f8fc !important;
     }
-    h1, h2, h3 { color: #65d6d0; }
+    [data-testid="stMetric"] {
+        background: #17445a;
+        border: 1px solid #39758b;
+        padding: 18px;
+        border-radius: 14px;
+    }
+    [data-testid="stMetricLabel"] {
+        color: #d4e9f2 !important;
+    }
+    [data-testid="stMetricValue"] {
+        color: #ffffff !important;
+    }
+    h1, h2, h3 {
+        color: #65d6d0 !important;
+    }
+    p, label, [data-testid="stCaptionContainer"] {
+        color: #e0edf5;
+    }
     </style>
     """,
     unsafe_allow_html=True,
 )
+
 
 
 def load_csv(relative_path):
