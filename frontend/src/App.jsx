@@ -1399,9 +1399,9 @@ function App() {
     role === "Admin"
       ? ["overview", "species", "habitats", "resources", "finance"]
       : role === "Farmer"
-        ? ["overview", "species", "habitats", "resources"]
+        ? ["overview", "species", "habitats"]
         : role === "Researcher"
-          ? ["overview", "species", "habitats"]
+          ? ["overview", "species", "habitats","resources"]
           : [];
 
   const visibleNavigation = navigation.filter((item) =>
